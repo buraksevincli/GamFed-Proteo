@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Inputs;
 using GameFolders.Scripts.Abstracts.Movements;
 using GameFolders.Scripts.Abstracts.Scriptables;
@@ -15,11 +12,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private IPlayerInput _input;
         private IMover _mover;
         private IJump _jump;
-        
+        private IFlip _flip;
+
+        private OnGround _onGround;
         private PlayerData _playerData;
 
         private float _horizontal;
         private bool _jumpButtonDown;
+        private GameObject _interactedObject;
         
         private void Awake()
         {
@@ -27,10 +27,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _input = new PcInput();
             _mover = new Mover(this);
             _jump = new Jump(this);
+            _flip = new Flip(this);
+            _onGround = GetComponent<OnGround>();
         }
 
         private void FixedUpdate()
         {
+            _flip.FixedTick(_horizontal);
             _mover.FixedTick(_horizontal,_playerData.MoveSpeed);
 
             if (_jumpButtonDown)
@@ -40,13 +43,42 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
         }
 
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            InteractiveObjectsController interactiveObject = col.GetComponent<InteractiveObjectsController>();
+            
+            if (interactiveObject != null)
+            {
+                _interactedObject = col.gameObject;
+            }
+            
+        }
+        
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            InteractiveObjectsController interactiveObject = other.GetComponent<InteractiveObjectsController>();
+        
+            if (interactiveObject != null)
+            {
+                _interactedObject = null;
+            }
+        }
+
         private void Update()
         {
             _horizontal = _input.Horizontal;
 
-            if (_input.JumpButtonDown)
+            if (_input.JumpButtonDown && _onGround.IsOnGround)
             {
                 _jumpButtonDown = true;
+            }
+        }
+
+        public void InteractiveButtonController()
+        {
+            if (_interactedObject != null)
+            {
+                _interactedObject.SetActive(false);
             }
         }
     }

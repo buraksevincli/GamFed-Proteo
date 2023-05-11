@@ -9,10 +9,20 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
     { 
         [Header("Player Movement Settings")]
         [SerializeField] private float moveSpeed;
-
         [SerializeField] private float jumpForce;
-        public float MoveSpeed => moveSpeed;
-        public float JumpForce => jumpForce;
 
+        [Header("Energy Bar Settings")]
+        [SerializeField] private float energyDecrease;
+        [SerializeField] private float energyIncrease;
+        public float MoveSpeed 
+        {
+            get
+            { return moveSpeed; }
+            set
+            { moveSpeed = value; }
+        }
+        public float JumpForce => jumpForce;
+        public float EnergyDecrease => energyDecrease;
+        public float EnergyIncrease => energyIncrease;
     }
 }
