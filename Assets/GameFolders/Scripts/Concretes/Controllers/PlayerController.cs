@@ -45,20 +45,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            InteractiveObjectsController interactiveObject = col.GetComponent<InteractiveObjectsController>();
-            
-            if (interactiveObject != null)
+            if (col.TryGetComponent(out InteractiveObjectsController interactiveObject))
             {
                 _interactedObject = col.gameObject;
             }
-            
         }
         
         private void OnTriggerExit2D(Collider2D other)
         {
-            InteractiveObjectsController interactiveObject = other.GetComponent<InteractiveObjectsController>();
-        
-            if (interactiveObject != null)
+            if (other.TryGetComponent(out InteractiveObjectsController interactiveObject))
             {
                 _interactedObject = null;
             }
