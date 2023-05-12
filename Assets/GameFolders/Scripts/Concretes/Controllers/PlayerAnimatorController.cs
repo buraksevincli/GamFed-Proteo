@@ -27,5 +27,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _animator.SetFloat("IsJump",Mathf.Abs(jumpValue));
         }
+
+        public void SetRestAnimation()
+        {
+            // Burayı doldur!
+        }
     }
 }

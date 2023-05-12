@@ -7,5 +7,6 @@ namespace GameFolders.Scripts.Abstracts.Movements
         void SetRunAnimation(float horizontal);
         void SetJumpAnimation();
         void SetJumpAnimationValue(float jumpValue);
+        void SetRestAnimation();
     }
 }

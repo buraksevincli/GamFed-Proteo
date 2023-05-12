@@ -12,7 +12,7 @@ namespace GameFolders.Scripts.Concretes.Managers
     {
         [SerializeField] private InteractAndCollectObject[] interactObjectPrefab;
 
-        private Queue<InteractAndCollectObject> _interactPool = new Queue<InteractAndCollectObject>();
+        private readonly Queue<InteractAndCollectObject> _interactPool = new Queue<InteractAndCollectObject>();
 
         private void Start()
         {
@@ -25,7 +25,7 @@ namespace GameFolders.Scripts.Concretes.Managers
             {
                 InteractAndCollectObject interactObject = Instantiate(interactObjectPrefab[i]);
                 interactObject.gameObject.SetActive(false);
-                interactObject.transform.parent = this.transform;
+                interactObject.transform.parent = transform;
 
                 _interactPool.Enqueue(interactObject);
             }

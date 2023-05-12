@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Inputs;
 using GameFolders.Scripts.Abstracts.Scriptables;
 using GameFolders.Scripts.Concretes.Inputs;
+using GameFolders.Scripts.Concretes.Managers;
 using Mono.Cecil;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,38 +13,23 @@ namespace GameFolders.Scripts.Concretes.Controllers
 {
     public class EnergyBarController : MonoBehaviour
     {
-        private Image _image;
-        private PlayerData _playerData;
-        
-        private IPlayerInput _input;
+        [SerializeField] private Image image;
+        [SerializeField] private Gradient gradient;
 
-        private void Awake()
+        private void OnEnable()
         {
-            _image = GetComponentInChildren<Image>();
-            _input = new PcInput();
-            _playerData = Resources.Load("Data/PlayerData") as PlayerData;
+            DataManager.Instance.EventData.OnChangeEnergyFillAmount += OnChangeEnergyFillAmountHandler;
         }
 
-        private void Update()
+        private void OnDisable()
         {
-            if (_input.Horizontal != 0)
-            {
-                EnergyDecrease();
-            }
-            else
-            {
-                EnergyIncrease();
-            }
+            DataManager.Instance.EventData.OnChangeEnergyFillAmount -= OnChangeEnergyFillAmountHandler;
         }
 
-        private void EnergyDecrease()
+        private void OnChangeEnergyFillAmountHandler(float value)
         {
-            _image.fillAmount -= _playerData.EnergyDecrease * Mathf.Abs(_input.Horizontal) * Time.deltaTime;
-        }
-
-        private void EnergyIncrease()
-        {
-            _image.fillAmount += _playerData.EnergyIncrease * Time.deltaTime;
+            image.fillAmount = value;
+            image.color = gradient.Evaluate(value);
         }
     }
 }

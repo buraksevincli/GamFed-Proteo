@@ -5,10 +5,13 @@ using UnityEngine;
 
 namespace GameFolders.Scripts.Abstracts.Utilities
 {
-    public class MonoSingleton<T> : MonoBehaviour where T : Component
+    public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        [SerializeField] private bool dontDestroyOnLoad;
-        public static T Instance { get; private set; }
+        private static volatile T instance = null;
+
+        public static T Instance => instance;
+        
+        [SerializeField] private bool dontDestroyOnLoad = false;
 
         protected virtual void Awake()
         {
@@ -17,14 +20,24 @@ namespace GameFolders.Scripts.Abstracts.Utilities
 
         private void Singleton()
         {
-            if (Instance == null)
+            if (dontDestroyOnLoad)
             {
-                Instance = this as T;
-                DontDestroyOnLoad(this.gameObject);
+                if (instance == null)
+                {
+                    instance = this as T;
+                    DontDestroyOnLoad(gameObject);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
             }
             else
             {
-                Destroy(this.gameObject);
+                if (instance == null)
+                {
+                    instance = this as T;
+                }
             }
         }
     }

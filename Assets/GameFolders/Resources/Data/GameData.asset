@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0b2b4f64a7e77042b62eb27db244617, type: 3}
-  m_Name: PlayerData
+  m_Name: GameData
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 400
-  energyDecrease: 0.02
-  energyIncrease: 0.01
+  energy: 100
+  forcedRestTime: 3
+  energyDecreaseCoefficient: 10
+  jumpEnergyDecreaseAmount: 10
+  energyIncreaseCoefficient: 3
