@@ -129,6 +129,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _animator.SetRunAnimation(_horizontal);
             _animator.SetJumpAnimationValue(_mover.GetVelocityY());
 
+            if (energyController.Energy < GameData.JumpEnergyDecreaseAmount) return;
+            
             if (_input.JumpButtonDown && _onGround.IsOnGround)
             {
                 _animator.SetJumpAnimation();
