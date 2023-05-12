@@ -6,11 +6,8 @@ using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Managers
 {
-    public class GameManager : SingletonMonoBehaviourObjects<GameManager>
+    public class GameManager : MonoSingleton<GameManager>
     {
-        private void Awake()
-        {
-            SingletonThisGameObject(this);
-        }
+        
     }
 }

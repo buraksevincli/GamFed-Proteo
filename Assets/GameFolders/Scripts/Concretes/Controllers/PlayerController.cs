@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Inputs;
 using GameFolders.Scripts.Abstracts.Movements;
 using GameFolders.Scripts.Abstracts.Scriptables;
@@ -9,6 +10,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
+        private List<GameObject> _interactedObject = new List<GameObject>();
+
         private IPlayerInput _input;
         private IMover _mover;
         private IJump _jump;
@@ -19,7 +22,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private float _horizontal;
         private bool _jumpButtonDown;
-        private GameObject _interactedObject;
+        //private GameObject _interactedObject;
         
         private void Awake()
         {
@@ -47,15 +50,17 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (col.TryGetComponent(out InteractiveObjectsController interactiveObject))
             {
-                _interactedObject = col.gameObject;
+                _interactedObject.Add(col.gameObject);
             }
         }
         
         private void OnTriggerExit2D(Collider2D other)
         {
+            if (!other.gameObject.activeSelf) return;
+            
             if (other.TryGetComponent(out InteractiveObjectsController interactiveObject))
             {
-                _interactedObject = null;
+                _interactedObject.Remove(other.gameObject);
             }
         }
 
@@ -73,7 +78,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (_interactedObject != null)
             {
-                _interactedObject.SetActive(false);
+                foreach (GameObject interactedObject in _interactedObject)
+                {
+                    interactedObject.SetActive(false);
+                }
             }
         }
     }

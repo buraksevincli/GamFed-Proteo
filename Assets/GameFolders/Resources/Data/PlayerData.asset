@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 400
+  energyDecrease: 0.02
+  energyIncrease: 0.01
