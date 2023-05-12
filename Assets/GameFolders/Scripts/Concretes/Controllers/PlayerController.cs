@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Inputs;
+using GameFolders.Scripts.Abstracts.Interactives;
 using GameFolders.Scripts.Abstracts.Movements;
 using GameFolders.Scripts.Abstracts.Scriptables;
 using GameFolders.Scripts.Concretes.Inputs;
@@ -16,22 +17,24 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private IMover _mover;
         private IJump _jump;
         private IFlip _flip;
+        private IAnimator _animator;
 
         private OnGround _onGround;
         private PlayerData _playerData;
 
         private float _horizontal;
         private bool _jumpButtonDown;
-        //private GameObject _interactedObject;
         
         private void Awake()
         {
             _playerData = Resources.Load("Data/PlayerData") as PlayerData;
+            _onGround = GetComponent<OnGround>();
+            
             _input = new PcInput();
             _mover = new Mover(this);
             _jump = new Jump(this);
             _flip = new Flip(this);
-            _onGround = GetComponent<OnGround>();
+            _animator = new PlayerAnimatorController(this);
         }
 
         private void FixedUpdate()
@@ -62,14 +65,23 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 _interactedObject.Remove(other.gameObject);
             }
+
+            if (other.TryGetComponent(out IInteractive interactive))
+            {
+                interactive.Interactive();
+            }
         }
 
         private void Update()
         {
             _horizontal = _input.Horizontal;
+            
+            _animator.SetRunAnimation(_horizontal);
+            _animator.SetJumpAnimationValue(_mover.GetVelocityY());
 
             if (_input.JumpButtonDown && _onGround.IsOnGround)
             {
+                _animator.SetJumpAnimation();
                 _jumpButtonDown = true;
             }
         }

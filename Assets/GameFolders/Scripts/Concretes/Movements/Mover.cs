@@ -18,5 +18,10 @@ namespace GameFolders.Scripts.Concretes.Movements
         {
             _rigidbody2D.velocity = new Vector2(horizontal * moveSpeed, _rigidbody2D.velocity.y);
         }
+
+        public float GetVelocityY()
+        {
+            return _rigidbody2D.velocity.y;
+        }
     }
 }

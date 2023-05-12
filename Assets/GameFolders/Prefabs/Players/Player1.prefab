@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3544121054960556187, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661091665336417986, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037534767503484116, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: distance
       value: 1
@@ -79,6 +87,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7463850574335019191, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8967943246300828323, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: maxDistance
       value: 0.3
@@ -110,6 +122,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3544121054960556187, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
   m_PrefabInstance: {fileID: 1411639870709723828}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5395842364762469718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6446556457667512290, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+  m_PrefabInstance: {fileID: 1411639870709723828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1568915458
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5395842364762469718}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac70dfcf95c2e4a779ab032a736d04b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &5996719749751852150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4661091665336417986, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}

@@ -16,7 +16,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
             else
             {
-                arrow.gameObject.SetActive(true);
+                if (!arrow.gameObject.activeSelf)
+                {
+                    arrow.gameObject.SetActive(true);
+                }
+                
                 GuideArrowController();
             }
         }
