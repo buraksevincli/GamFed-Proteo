@@ -3,12 +3,9 @@ using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Interactives
 {
-    public class ExcavableObject : MonoBehaviour, IInteractive
+    public class ExcavableObject : MonoBehaviour
     {
-        public void Interactive()
-        {
-            
-        }
+        
     }
 }
 

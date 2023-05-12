@@ -5,12 +5,9 @@ using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Interactives
 {
-    public class BarkAndCollectObject : MonoBehaviour, IInteractive
+    public class BarkAndCollectObject : MonoBehaviour
     {
-        public void Interactive()
-        {
-            
-        }
+        
     }
 }
 

@@ -63,9 +63,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _barkObject.Add(col.gameObject);
             }
             
-            if (col.TryGetComponent(out IInteractive interactive))
+            if (col.TryGetComponent(out InteractAndCollectObject interactObject))
             {
-                interactive.Interactive();
+                interactObject.SetThis();
             }
         }
         
