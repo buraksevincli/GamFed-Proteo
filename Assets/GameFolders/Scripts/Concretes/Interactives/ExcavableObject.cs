@@ -1,9 +1,9 @@
 using GameFolders.Scripts.Abstracts.Interactives;
 using UnityEngine;
 
-namespace GameFolders.Scripts.Concretes.Controllers
+namespace GameFolders.Scripts.Concretes.Interactives
 {
-    public class InteractiveObjectsController : MonoBehaviour , IInteractive
+    public class ExcavableObject : MonoBehaviour, IInteractive
     {
         public void Interactive()
         {

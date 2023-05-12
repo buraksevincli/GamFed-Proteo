@@ -4,6 +4,7 @@ using GameFolders.Scripts.Abstracts.Interactives;
 using GameFolders.Scripts.Abstracts.Movements;
 using GameFolders.Scripts.Abstracts.Scriptables;
 using GameFolders.Scripts.Concretes.Inputs;
+using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Movements;
 using UnityEngine;
 
@@ -11,7 +12,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
-        private List<GameObject> _interactedObject = new List<GameObject>();
+        private List<GameObject> _excavableObject = new List<GameObject>();
+        private List<GameObject> _barkObject = new List<GameObject>();
 
         private IPlayerInput _input;
         private IMover _mover;
@@ -51,24 +53,34 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.TryGetComponent(out InteractiveObjectsController interactiveObject))
+            if (col.TryGetComponent(out ExcavableObject excavableObject))
             {
-                _interactedObject.Add(col.gameObject);
+                _excavableObject.Add(col.gameObject);
+            }
+
+            if (col.TryGetComponent(out BarkAndCollectObject barkObject))
+            {
+                _barkObject.Add(col.gameObject);
+            }
+            
+            if (col.TryGetComponent(out IInteractive interactive))
+            {
+                interactive.Interactive();
             }
         }
         
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (!other.gameObject.activeSelf) return;
-            
-            if (other.TryGetComponent(out InteractiveObjectsController interactiveObject))
+            if (other.TryGetComponent(out BarkAndCollectObject barkObject))
             {
-                _interactedObject.Remove(other.gameObject);
+                if (!other.gameObject.activeSelf) return;
+                _barkObject.Remove(other.gameObject);
             }
-
-            if (other.TryGetComponent(out IInteractive interactive))
+            
+            if (other.TryGetComponent(out ExcavableObject excavableObject))
             {
-                interactive.Interactive();
+                if (!other.gameObject.activeSelf) return;
+                _excavableObject.Remove(other.gameObject);
             }
         }
 
@@ -86,13 +98,24 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
         }
 
-        public void InteractiveButtonController()
+        public void ExcavableObjectController()
         {
-            if (_interactedObject != null)
+            if (_excavableObject != null)
             {
-                foreach (GameObject interactedObject in _interactedObject)
+                foreach (GameObject excavableObject in _excavableObject)
                 {
-                    interactedObject.SetActive(false);
+                    excavableObject.SetActive(false);
+                }
+            }
+        }
+
+        public void BarkObjectController()
+        {
+            if (_barkObject != null)
+            {
+                foreach (GameObject barkObject in _barkObject)
+                {
+                    barkObject.SetActive(false);
                 }
             }
         }

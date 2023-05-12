@@ -394,7 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   arrow: {fileID: 8175179300017166834}
-  distance: 5
+  distance: 1
 --- !u!1 &8319132803726062303
 GameObject:
   m_ObjectHideFlags: 0
