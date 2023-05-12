@@ -64,8 +64,12 @@ PrefabInstance:
       value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 6446556457667512288, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 460266388, guid: 0befff81eb67047f2b4b272d9ec42d93, type: 3}
+    - target: {fileID: 6446556457667512288, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Color.b
-      value: 0.06844115
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6446556457667512288, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Color.g
@@ -73,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6446556457667512288, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8967943246300828323, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: maxDistance

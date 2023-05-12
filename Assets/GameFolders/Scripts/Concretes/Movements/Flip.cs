@@ -22,11 +22,11 @@ namespace GameFolders.Scripts.Concretes.Movements
 
             if (direction > 0)
             {
-                _spriteRenderer.flipX = false;
+                _spriteRenderer.flipX = true;
             }
             else
             {
-                _spriteRenderer.flipX = true;
+                _spriteRenderer.flipX = false;
             }
         }
     }
