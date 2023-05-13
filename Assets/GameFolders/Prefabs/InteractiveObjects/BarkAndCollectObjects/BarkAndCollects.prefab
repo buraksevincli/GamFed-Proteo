@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9167696708812120830}
   - component: {fileID: 902357009559822839}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1213224647704746565}
   - component: {fileID: 2707104182930167942}
   - component: {fileID: 3645208894476083967}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: BarkAndCollects
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -7,9 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2550905763106565654, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3544121054960556187, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626243873341628140, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4661091665336417986, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -75,6 +83,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 6446556456983597855, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6446556457667512288, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -95,9 +107,29 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6446556457667512290, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511182331521296129, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763126409425936949, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7463850574335019191, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319132803726062303, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722189475075937833, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8967943246300828323, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: maxDistance

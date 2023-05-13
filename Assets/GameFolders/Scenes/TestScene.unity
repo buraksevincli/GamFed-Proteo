@@ -178,14 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cloth1 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 3249278478239269007, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5309141703647132260, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8df66e499397548a826434bdab347b, type: 3}
 --- !u!1001 &32909629
@@ -242,22 +234,6 @@ PrefabInstance:
     - target: {fileID: 4279230801429296700, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
       propertyPath: m_Name
       value: Ball1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279230801429296700, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: angle
-      value: 135
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: lifeTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: magnitude
-      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
@@ -316,10 +292,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cloth1 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3249278478239269007, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8df66e499397548a826434bdab347b, type: 3}
 --- !u!1001 &170591936
@@ -376,22 +348,6 @@ PrefabInstance:
     - target: {fileID: 4279230801429296700, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
       propertyPath: m_Name
       value: Ball1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279230801429296700, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: angle
-      value: 135
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: lifeTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: magnitude
-      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
@@ -1218,14 +1174,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cloth1 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 3249278478239269007, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5309141703647132260, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8df66e499397548a826434bdab347b, type: 3}
 --- !u!1001 &1218889396
@@ -1507,10 +1455,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cloth1
       objectReference: {fileID: 0}
-    - target: {fileID: 5309141703647132260, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8df66e499397548a826434bdab347b, type: 3}
 --- !u!1 &1401125665
@@ -1730,14 +1674,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cloth1 (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 3249278478239269007, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5309141703647132260, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8df66e499397548a826434bdab347b, type: 3}
 --- !u!4 &1748261153 stripped
@@ -1799,22 +1735,6 @@ PrefabInstance:
     - target: {fileID: 4279230801429296700, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
       propertyPath: m_Name
       value: Ball1 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4279230801429296700, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: angle
-      value: 135
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: lifeTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6970561299482041896, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
-      propertyPath: magnitude
-      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab98ac9cec6119042b007b96de54d4a9, type: 3}
@@ -2078,14 +1998,6 @@ PrefabInstance:
     - target: {fileID: 3249278478239269007, guid: 9a8df66e499397548a826434bdab347b, type: 3}
       propertyPath: m_Name
       value: Cloth1 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3249278478239269007, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5309141703647132260, guid: 9a8df66e499397548a826434bdab347b, type: 3}
-      propertyPath: m_Simulated
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8df66e499397548a826434bdab347b, type: 3}

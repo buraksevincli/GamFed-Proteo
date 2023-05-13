@@ -1,14 +1,15 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Interactives
 {
     public class BarkAndCollectObject : MonoBehaviour
     {
         [SerializeField] private LayerMask layerMask;
-
+        [SerializeField] private float maxDistance;
+        
         private Rigidbody2D _rigidbody2D;
-        private float _maxDistance = 0.5f;
 
         private void Awake()
         {
@@ -22,9 +23,10 @@ namespace GameFolders.Scripts.Concretes.Interactives
 
         private void CheckExcavableObjects()
         {
-            RaycastHit2D hit2D = Physics2D.Raycast(transform.position, transform.forward * _maxDistance, layerMask);
+            RaycastHit2D hit2D = 
+                Physics2D.Raycast(transform.position, transform.forward, maxDistance, layerMask);
 
-            Debug.DrawRay(transform.position, -transform.forward * _maxDistance, Color.red);
+            Debug.DrawRay(transform.position, transform.forward * maxDistance, Color.red);
             
             if (hit2D.collider != null)
             {

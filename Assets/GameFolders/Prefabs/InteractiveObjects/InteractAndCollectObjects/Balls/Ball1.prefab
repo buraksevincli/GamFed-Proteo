@@ -37,7 +37,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8389116133234434222, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
       propertyPath: m_Name
-      value: Ball1
+      value: Ball1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389116133234434222, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
       propertyPath: m_RootOrder
@@ -45,11 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 8.22
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
       propertyPath: m_LocalPosition.z
