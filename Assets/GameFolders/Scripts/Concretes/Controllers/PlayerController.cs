@@ -178,6 +178,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             yield return _waitForcedRestTime;
 
             _canMove = true;
+            _animator.StandUpAnimation();
         }
     }
 }

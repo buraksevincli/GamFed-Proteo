@@ -23,7 +23,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             Vector2 playerPosition = new Vector2(_player.transform.position.x, transform.position.y);
             Vector2 targetPose = playerPosition + offset;
-
             transform.position = Vector2.Lerp(transform.position, targetPose, followSpeed * Time.deltaTime);
         }
 
@@ -33,7 +32,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 _player = player;
                 _canMove = !_canMove;
-                
+
                 return;
             }
 

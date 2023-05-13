@@ -30,7 +30,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         public void SetRestAnimation()
         {
-            // Burayı doldur!
+            _animator.SetTrigger("Sit");
+            _animator.SetBool("IsStand" , true);
+        }
+
+        public void StandUpAnimation()
+        {
+            _animator.SetBool("IsStand" , false);
         }
     }
 }
