@@ -18,8 +18,6 @@ namespace GameFolders.Scripts.Concretes.Interactives
         private void Update()
         {
             CheckExcavableObjects();
-            
-            Debug.Log(_rigidbody2D.simulated);
         }
 
         private void CheckExcavableObjects()
@@ -31,7 +29,6 @@ namespace GameFolders.Scripts.Concretes.Interactives
             if (hit2D.collider != null)
             {
                 _rigidbody2D.simulated = false;
-                Debug.Log(hit2D.collider);
             }
             else
             {
