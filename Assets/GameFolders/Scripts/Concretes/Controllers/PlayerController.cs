@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Inputs;
-using GameFolders.Scripts.Abstracts.Interactives;
 using GameFolders.Scripts.Abstracts.Movements;
 using GameFolders.Scripts.Abstracts.Scriptables;
 using GameFolders.Scripts.Concretes.Inputs;

@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using GameFolders.Scripts.Abstracts.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 
