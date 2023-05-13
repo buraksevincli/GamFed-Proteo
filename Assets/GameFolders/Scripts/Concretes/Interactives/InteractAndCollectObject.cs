@@ -5,10 +5,6 @@ namespace GameFolders.Scripts.Concretes.Interactives
 {
     public class InteractAndCollectObject : MonoBehaviour
     {
-        [SerializeField] private float angle;
-        [SerializeField] private float magnitude;
-        [SerializeField] private float lifeTime;
-
         private float _currentLifeTime = 0;
         private Rigidbody2D _rigidbody2D;
 
@@ -26,7 +22,7 @@ namespace GameFolders.Scripts.Concretes.Interactives
         {
             _currentLifeTime += Time.deltaTime;
             
-            if (_currentLifeTime > lifeTime)
+            if (_currentLifeTime > DataManager.Instance.GameData.LifeTime)
             {
                 _currentLifeTime = 0;
                 SetThis();
@@ -35,7 +31,11 @@ namespace GameFolders.Scripts.Concretes.Interactives
 
         private void ThrowObject()
         {
-            Vector2 force = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad)) * magnitude;
+            Vector2 force = new Vector2(
+                Mathf.Cos(DataManager.Instance.GameData.Angle * Mathf.Deg2Rad), 
+                Mathf.Sin(DataManager.Instance.GameData.Angle * Mathf.Deg2Rad)) * 
+                            DataManager.Instance.GameData.Magnitude;
+            
             _rigidbody2D.AddForce(force);
         }
 

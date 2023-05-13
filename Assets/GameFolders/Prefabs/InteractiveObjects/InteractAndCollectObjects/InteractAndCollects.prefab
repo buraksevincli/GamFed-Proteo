@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9167696708812120830}
   - component: {fileID: 902357009559822839}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1629070785
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 9069689899970751335}
   - component: {fileID: 2707104182930167942}
   - component: {fileID: 3436995836469561530}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: InteractAndCollects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,5 +195,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2658dba30055ae246b62f827ae05c7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 0
-  magnitude: 0

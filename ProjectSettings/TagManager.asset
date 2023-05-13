@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Excavable
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1975337229
+    locked: 0
+  - name: Midground
+    uniqueID: 3736301209
+    locked: 0
+  - name: Foreground
+    uniqueID: 1629070785
+    locked: 0
+  - name: Player
+    uniqueID: 2499553305
     locked: 0

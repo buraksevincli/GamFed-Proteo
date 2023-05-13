@@ -17,6 +17,12 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float energyDecreaseCoefficient;
         [SerializeField] private float jumpEnergyDecreaseAmount;
         [SerializeField] private float energyIncreaseCoefficient;
+
+        [Header("Object To Be Thrown Settings")]
+        [SerializeField] private float angle;
+        [SerializeField] private float magnitude;
+        [SerializeField] private float lifeTime;
+        
         
         public float MoveSpeed => moveSpeed;
         public float JumpForce => jumpForce;
@@ -25,5 +31,8 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float EnergyIncreaseCoefficient => energyIncreaseCoefficient;
         public float Energy => energy;
         public float ForcedRestTime => forcedRestTime;
+        public float Angle => angle;
+        public float Magnitude => magnitude;
+        public float LifeTime => lifeTime;
     }
 }

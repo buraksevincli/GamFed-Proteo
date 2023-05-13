@@ -95,16 +95,16 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.TryGetComponent(out BarkAndCollectObject barkObject))
-            {
-                if (!other.gameObject.activeSelf) return;
-                _barkObject.Remove(other.gameObject);
-            }
-
             if (other.TryGetComponent(out ExcavableObject excavableObject))
             {
                 if (!other.gameObject.activeSelf) return;
                 _excavableObject.Remove(other.gameObject);
+            }
+            
+            if (other.TryGetComponent(out BarkAndCollectObject barkObject))
+            {
+                if (!other.gameObject.activeSelf) return;
+                _barkObject.Remove(other.gameObject);
             }
         }
 
