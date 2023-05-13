@@ -1,11 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using GameFolders.Scripts.Abstracts.Inputs;
-using GameFolders.Scripts.Abstracts.Scriptables;
-using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Managers;
-using Mono.Cecil;
 using UnityEngine;
 using UnityEngine.UI;
 

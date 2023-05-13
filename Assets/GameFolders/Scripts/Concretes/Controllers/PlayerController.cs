@@ -7,6 +7,7 @@ using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.Movements;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -28,6 +29,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private OnGround _onGround;
         private WaitForSeconds _waitForcedRestTime;
+        private PullAndPush _pullAndPush;
 
         private float _horizontal;
         private bool _jumpButtonDown;
@@ -42,6 +44,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _jump = new Jump(this);
             _flip = new Flip(this);
             _animator = new PlayerAnimatorController(this);
+
+            _pullAndPush = GetComponent<PullAndPush>();
 
             _waitForcedRestTime = new WaitForSeconds(GameData.ForcedRestTime);
         }
