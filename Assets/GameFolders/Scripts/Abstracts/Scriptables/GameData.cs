@@ -10,6 +10,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [Header("Player Movement Settings")]
         [SerializeField] private float moveSpeed;
         [SerializeField] private float jumpForce;
+        [SerializeField] [Range(0, 1)] private float slowdownSpeedCoefficient;
 
         [Header("Energy Bar Settings")] 
         [SerializeField] private float energy;
@@ -23,9 +24,8 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float magnitude;
         [SerializeField] private float lifeTime;
         
-        
-        public float MoveSpeed => moveSpeed;
-        public float JumpForce => jumpForce;
+        private float _speedCoefficient = 1f;
+
         public float EnergyDecreaseCoefficient => energyDecreaseCoefficient;
         public float JumpEnergyDecreaseAmount => jumpEnergyDecreaseAmount;
         public float EnergyIncreaseCoefficient => energyIncreaseCoefficient;
@@ -34,5 +34,25 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float Angle => angle;
         public float Magnitude => magnitude;
         public float LifeTime => lifeTime;
+        
+        public float GetMoveSpeed()
+        {
+            return moveSpeed * _speedCoefficient;
+        }
+
+        public float GetJumpForce()
+        {
+            return jumpForce * _speedCoefficient;
+        }
+
+        public void Slowdown()
+        {
+            _speedCoefficient = slowdownSpeedCoefficient;
+        }
+
+        public void ResetSpeed()
+        {
+            _speedCoefficient = 1f;
+        }
     }
 }

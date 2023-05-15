@@ -65,7 +65,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (!_canMove) return;
 
             _flip.FixedTick(_horizontal);
-            _mover.FixedTick(_horizontal, GameData.MoveSpeed);
+            _mover.FixedTick(_horizontal, GameData.GetMoveSpeed());
 
             DataManager.Instance.EventData.OnSpendEnergy?.Invoke(Mathf.Abs(_horizontal) * GameData.EnergyDecreaseCoefficient * Time.deltaTime);
 
@@ -74,7 +74,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 if (energyController.Energy < GameData.JumpEnergyDecreaseAmount) return;
 
                 DataManager.Instance.EventData.OnSpendEnergy?.Invoke(GameData.JumpEnergyDecreaseAmount);
-                _jump.FixedTick(GameData.JumpForce);
+                _jump.FixedTick(GameData.GetJumpForce());
                 _jumpButtonDown = false;
             }
         }
