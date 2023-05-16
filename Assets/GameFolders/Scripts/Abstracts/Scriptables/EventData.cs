@@ -11,5 +11,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public Action<float> OnChangeEnergyFillAmount { get; set; }
         public Action OnEnergyOver { get; set; }
         public Action OnFollowPlayer { get; set; }
+        public Action OnEnergyIncrease { get; set; }
     }
 }

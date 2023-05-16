@@ -164,6 +164,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 {
                     barkObject.SetActive(false);
                 }
+                
+                DataManager.Instance.EventData.OnEnergyIncrease?.Invoke();
             }
         }
 
