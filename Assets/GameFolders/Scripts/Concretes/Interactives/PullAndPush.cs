@@ -65,5 +65,12 @@ namespace GameFolders.Scripts.Concretes.Interactives
         {
             LineRendererController.Instance.BreakTheLineRenderer();
         }
+
+#if UNITY_EDITOR
+        private void OnDrawGizmos()
+        {
+            Debug.DrawRay(mouthTransform.position, mouthTransform.right * distance, Color.blue);
+        }
+#endif
     }
 }
