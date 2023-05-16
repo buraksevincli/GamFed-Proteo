@@ -147,25 +147,27 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         public void ExcavableObjectController()
         {
-            if (_excavableObject != null)
+            if (_excavableObject.Count != 0)
             {
                 foreach (GameObject excavableObject in _excavableObject)
                 {
                     excavableObject.SetActive(false);
                 }
+                _excavableObject.Clear();
             }
         }
 
         public void BarkObjectController()
         {
-            if (_barkObject != null)
+            if (_barkObject.Count != 0)
             {
                 foreach (GameObject barkObject in _barkObject)
                 {
                     barkObject.SetActive(false);
                 }
+                _barkObject.Clear();
                 
-                DataManager.Instance.EventData.OnEnergyIncrease?.Invoke();
+                DataManager.Instance.EventData.OnGainEnergy.Invoke(DataManager.Instance.GameData.EnergyIncreaseAmount);
             }
         }
 

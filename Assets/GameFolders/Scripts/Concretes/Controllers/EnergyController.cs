@@ -24,19 +24,12 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             DataManager.Instance.EventData.OnSpendEnergy += OnSpendEnergyHandler;
             DataManager.Instance.EventData.OnGainEnergy += OnGainEnergyHandler;
-            DataManager.Instance.EventData.OnEnergyIncrease += OnEnergyIncreaseHandler;
         }
 
         private void OnDisable()
         {
             DataManager.Instance.EventData.OnSpendEnergy -= OnSpendEnergyHandler;
             DataManager.Instance.EventData.OnGainEnergy -= OnGainEnergyHandler;
-            DataManager.Instance.EventData.OnEnergyIncrease -= OnEnergyIncreaseHandler;
-        }
-
-        private void OnEnergyIncreaseHandler()
-        {
-            _energy += DataManager.Instance.GameData.EnergyIncreaseAmount;
         }
 
         private void OnSpendEnergyHandler(float energy)
