@@ -9,11 +9,11 @@ namespace GameFolders.Scripts.Concretes.Movements
 {
     public class Flip : IFlip
     {
-        private SpriteRenderer _spriteRenderer;
+        private Transform _transform;
         
         public Flip(PlayerController playerController)
         {
-            _spriteRenderer = playerController.GetComponentInChildren<SpriteRenderer>();
+            _transform = playerController.transform;
         }
         
         public void FixedTick(float direction)
@@ -22,11 +22,12 @@ namespace GameFolders.Scripts.Concretes.Movements
 
             if (direction > 0)
             {
-                _spriteRenderer.flipX = true;
+                _transform.localScale = new Vector3(1, 1, 1);
             }
             else
             {
-                _spriteRenderer.flipX = false;
+                _transform.localScale = new Vector3(-1, 1, 1);
+
             }
         }
     }

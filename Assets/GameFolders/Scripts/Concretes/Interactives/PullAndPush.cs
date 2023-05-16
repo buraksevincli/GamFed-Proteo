@@ -1,6 +1,8 @@
 using System;
 using System.Runtime.Serialization;
+using GameFolders.Scripts.Abstracts.Inputs;
 using GameFolders.Scripts.Concretes.Controllers;
+using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Managers;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,9 +11,10 @@ namespace GameFolders.Scripts.Concretes.Interactives
 {
     public class PullAndPush : MonoBehaviour
     {
+        [SerializeField] private Transform mouthTransform;
         [SerializeField] private LayerMask targetLayer;
         [SerializeField] private float distance;
-        
+
         private PushableObjectController _pushableObject;
         private bool _isConnected = false;
 
@@ -24,22 +27,20 @@ namespace GameFolders.Scripts.Concretes.Interactives
         {
             if(_isConnected) return;
             
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, distance, targetLayer);
-
+            RaycastHit2D hit = Physics2D.Raycast(mouthTransform.position, mouthTransform.right, distance, targetLayer);
+            
             if (hit)
             {
-                if(_pushableObject) return;
+                //if(_pushableObject) return;
                 
                 Collider2D obj = hit.collider;
 
                 _pushableObject = obj.GetComponent<PushableObjectController>();
-                UIController.Instance.OnPushButtonActive();
             }
             else
             {
-                if(!_pushableObject) return;
+                //if(!_pushableObject) return;
                 
-                UIController.Instance.OnPushButtonActive();
                 BreakLineRenderer();
                 _pushableObject = null;
             }
@@ -52,7 +53,9 @@ namespace GameFolders.Scripts.Concretes.Interactives
 
         private void SetLineRendererPositions()
         {
-            LineRendererController.Instance.OnSetLineRendererPosition(transform , _pushableObject.transform);
+            if(!_pushableObject) return;
+
+            LineRendererController.Instance.OnSetLineRendererPosition(mouthTransform , _pushableObject.transform);
             
             _pushableObject.SetPlayer(transform);
             _isConnected = !_isConnected;

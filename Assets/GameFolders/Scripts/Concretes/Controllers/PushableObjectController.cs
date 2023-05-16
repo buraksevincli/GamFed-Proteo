@@ -31,10 +31,18 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (!_player)
             {
                 _player = player;
+                
+                if (_player.position.x > transform.position.x)
+                {
+                    offset *= -1;
+                }
+                
                 _canMove = !_canMove;
-
+                
                 return;
             }
+
+            offset = new Vector2(Mathf.Abs(offset.x), Mathf.Abs(offset.y));
 
             _player = null;
             _canMove = !_canMove;

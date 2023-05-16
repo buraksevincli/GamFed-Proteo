@@ -24,17 +24,5 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             DataManager.Instance.EventData.OnFollowPlayer?.Invoke();
         }
-        
-        public void OnPushButtonActive()
-        {
-            if (pushButton.gameObject.activeInHierarchy)
-            {
-                pushButton.gameObject.SetActive(false);
-                
-                return;
-            }
-            
-            pushButton.gameObject.SetActive(true);
-        }
     }
 }
