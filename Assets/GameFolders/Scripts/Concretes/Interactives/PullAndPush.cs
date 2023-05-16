@@ -16,6 +16,7 @@ namespace GameFolders.Scripts.Concretes.Interactives
         [SerializeField] private float distance;
 
         private PushableObjectController _pushableObject;
+        private Vector2 _direction = Vector2.right;
         private bool _isConnected = false;
 
         private void OnEnable()
@@ -26,8 +27,15 @@ namespace GameFolders.Scripts.Concretes.Interactives
         private void Update()
         {
             if(_isConnected) return;
+
+            float horizontal = Input.GetAxis("Horizontal");
+
+            if (horizontal != 0)
+            {
+                _direction = new Vector2( horizontal > 0 ? 1 : -1, 0);
+            }
             
-            RaycastHit2D hit = Physics2D.Raycast(mouthTransform.position, mouthTransform.right, distance, targetLayer);
+            RaycastHit2D hit = Physics2D.Raycast(mouthTransform.position, _direction , distance, targetLayer);
             
             if (hit)
             {
@@ -69,7 +77,7 @@ namespace GameFolders.Scripts.Concretes.Interactives
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            Debug.DrawRay(mouthTransform.position, mouthTransform.right * distance, Color.blue);
+            Debug.DrawRay(mouthTransform.position, _direction * distance, Color.blue);
         }
 #endif
     }
