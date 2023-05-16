@@ -1085,6 +1085,7 @@ Transform:
   - {fileID: 1401125666}
   - {fileID: 505793795}
   - {fileID: 276890309}
+  - {fileID: 1253760176}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1700,6 +1701,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnTime: 0
   maxSpawnTime: 9
+--- !u!1 &1253760175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1253760176}
+  m_Layer: 0
+  m_Name: CampFires
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1253760176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253760175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1844292965}
+  m_Father: {fileID: 804643104}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1287916973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1840,8 +1873,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361947955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.8109, y: -3, z: 0}
-  m_LocalScale: {x: 53.619576, y: 1, z: 1}
+  m_LocalPosition: {x: 26.3328, y: -3, z: 0}
+  m_LocalScale: {x: 72.66525, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1533457717}
@@ -2266,6 +2299,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4267497203727027547, guid: 132f7edf5f3677e489088f562c687f6e, type: 3}
   m_PrefabInstance: {fileID: 1021412274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1844292964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1253760176}
+    m_Modifications:
+    - target: {fileID: 1227116788648984645, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Name
+      value: CampFire1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448848727808653711, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6448848727808653711, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+--- !u!4 &1844292965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1740654222277176571, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+  m_PrefabInstance: {fileID: 1844292964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1854034897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4267497203727027547, guid: 132f7edf5f3677e489088f562c687f6e, type: 3}
@@ -2511,6 +2614,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2163470688817276706, guid: e10ca6973469f4ec1af555f311b01904, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1795413991
+      objectReference: {fileID: 0}
     - target: {fileID: 2163470688817276709, guid: e10ca6973469f4ec1af555f311b01904, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2603,6 +2710,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 326033949}
+    - target: {fileID: 3298444502206009709, guid: e10ca6973469f4ec1af555f311b01904, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5873960810439867353, guid: e10ca6973469f4ec1af555f311b01904, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Abstracts.Scriptables
@@ -48,8 +46,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float FeelWarmCoefficient => feelWarmCoefficient;
         public float SlowdownTime => slowdownTime;
         public float WarmUpPercentageAfterFreeze => warmUpPercentageAfterFreeze;
-        
-        
+
         public float GetMoveSpeed()
         {
             return moveSpeed * _speedCoefficient;

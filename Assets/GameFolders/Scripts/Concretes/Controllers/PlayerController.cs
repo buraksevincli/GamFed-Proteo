@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Inputs;
@@ -8,7 +7,6 @@ using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.Movements;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -56,6 +54,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void OnDisable()
         {
             DataManager.Instance.EventData.OnEnergyOver -= OnEnergyOverHandler;
+            GameData.ResetSpeed();
         }
 
         private void FixedUpdate()
@@ -112,7 +111,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
-            Debug.Log(GameData.GetMoveSpeed());
             DataManager.Instance.EventData.OnFeelCold?.Invoke();
             
             if (!_canMove)

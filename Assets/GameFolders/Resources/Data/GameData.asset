@@ -21,10 +21,11 @@ MonoBehaviour:
   energyIncreaseCoefficient: 3
   energyIncreaseAmount: 15
   cold: 100
-  feelColdCoefficient: 10
-  feelWarmCoefficient: 0
-  slowdownTime: 2
+  feelColdCoefficient: 1
+  feelWarmCoefficient: 1
+  slowdownTime: 10
   slowdownSpeedCoefficient: 0.5
+  warmUpPercentageAfterFreeze: 15
   angle: 45
   magnitude: 500
   lifeTime: 5

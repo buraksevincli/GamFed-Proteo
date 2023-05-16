@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using GameFolders.Scripts.Abstracts.Scriptables;
 using GameFolders.Scripts.Concretes.Managers;
@@ -12,12 +11,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private float _cold;
         private bool _isFreeze;
-        public float Cold => _cold;
-
-        private void Awake()
-        {
-            _cold = 0;
-        }
 
         private void OnEnable()
         {
@@ -33,7 +26,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnFeelWarmHandler()
         {
-            if (_cold < 0)
+            if (_cold > 0)
             {
                 _cold -= Time.deltaTime * GameData.FeelWarmCoefficient;
                 DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
@@ -44,7 +37,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if(_isFreeze) return;
             
-            if (_cold < 100)
+            if (_cold < GameData.Cold)
             {
                 _cold += Time.deltaTime * GameData.FeelColdCoefficient;
                 DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);

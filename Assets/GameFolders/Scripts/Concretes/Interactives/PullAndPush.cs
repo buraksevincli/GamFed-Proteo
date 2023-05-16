@@ -1,10 +1,5 @@
-using System;
-using System.Runtime.Serialization;
-using GameFolders.Scripts.Abstracts.Inputs;
 using GameFolders.Scripts.Concretes.Controllers;
-using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Managers;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Interactives
