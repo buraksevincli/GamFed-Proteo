@@ -30,8 +30,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private OnGround _onGround;
         private WaitForSeconds _waitForcedRestTime;
-        private WaitForSeconds _waitFreezeTime;
-        private PullAndPush _pullAndPush;
 
         private float _horizontal;
         private bool _jumpButtonDown;
@@ -47,22 +45,17 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _flip = new Flip(this);
             _animator = new PlayerAnimatorController(this);
 
-            _pullAndPush = GetComponent<PullAndPush>();
-
             _waitForcedRestTime = new WaitForSeconds(GameData.ForcedRestTime);
-            _waitFreezeTime = new WaitForSeconds(GameData.SlowdownTime);
         }
 
         private void OnEnable()
         {
             DataManager.Instance.EventData.OnEnergyOver += OnEnergyOverHandler;
-            DataManager.Instance.EventData.OnPlayerFreeze += OnPlayerFreezeHandler;
         }
 
         private void OnDisable()
         {
             DataManager.Instance.EventData.OnEnergyOver -= OnEnergyOverHandler;
-            DataManager.Instance.EventData.OnPlayerFreeze -= OnPlayerFreezeHandler;
         }
 
         private void FixedUpdate()
@@ -152,12 +145,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             StartCoroutine(ForcedRestCoroutine());
         }
-
-        private void OnPlayerFreezeHandler()
-        {
-            StartCoroutine(PlayerFreezeTime());
-        }
-
+        
         public void ExcavableObjectController()
         {
             if (_excavableObject.Count != 0)
@@ -196,15 +184,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             _canMove = true;
             _animator.StandUpAnimation();
-        }
-        
-        private IEnumerator PlayerFreezeTime()
-        {
-           DataManager.Instance.GameData.Slowdown();
-
-           yield return _waitFreezeTime;
-           
-           DataManager.Instance.GameData.ResetSpeed();
         }
     }
 }

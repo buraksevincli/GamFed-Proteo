@@ -13,7 +13,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public Action OnFollowPlayer { get; set; }
         public Action<float> OnChangeColdFillAmount { get; set; }
         public Action OnFeelCold { get; set; } 
-        public Action OnPlayerFreeze { get; set; }
         public Action OnFeelWarm { get; set; } // Ateş Objesinin yakınında Invoke'lanacak.
     }
 }

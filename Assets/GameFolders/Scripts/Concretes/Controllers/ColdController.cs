@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using GameFolders.Scripts.Abstracts.Scriptables;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
@@ -10,9 +11,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private static GameData GameData => DataManager.Instance.GameData;
 
         private float _cold;
+        private bool _isFreeze;
         public float Cold => _cold;
-
-        public bool IsFreeze => _cold >= 100;
 
         private void Awake()
         {
@@ -42,6 +42,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnFeelColdHandler()
         {
+            if(_isFreeze) return;
+            
             if (_cold < 100)
             {
                 _cold += Time.deltaTime * GameData.FeelColdCoefficient;
@@ -49,9 +51,33 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
             else
             {
-                DataManager.Instance.EventData.OnPlayerFreeze?.Invoke();
+                StartCoroutine(PlayerFreezeTime());
                 DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
             }
+        }
+        
+        private IEnumerator PlayerFreezeTime()
+        {
+            _isFreeze = true;
+            
+            GameData.Slowdown();
+
+            float time = GameData.SlowdownTime;
+            
+            while (time > 0)
+            {
+                time -= Time.deltaTime;
+
+                _cold -= Time.deltaTime * GameData.WarmUpPercentageAfterFreeze / GameData.SlowdownTime;
+                
+                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
+
+                yield return null;
+            }
+           
+            GameData.ResetSpeed();
+            
+            _isFreeze = false;
         }
     }
 }

@@ -25,6 +25,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float feelWarmCoefficient;
         [SerializeField] private float slowdownTime;
         [SerializeField] [Range(0, 1)] private float slowdownSpeedCoefficient;
+        [SerializeField] private float warmUpPercentageAfterFreeze;
 
         [Header("Object To Be Thrown Settings")]
         [SerializeField] private float angle;
@@ -46,6 +47,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float FeelColdCoefficient => feelColdCoefficient;
         public float FeelWarmCoefficient => feelWarmCoefficient;
         public float SlowdownTime => slowdownTime;
+        public float WarmUpPercentageAfterFreeze => warmUpPercentageAfterFreeze;
         
         
         public float GetMoveSpeed()
