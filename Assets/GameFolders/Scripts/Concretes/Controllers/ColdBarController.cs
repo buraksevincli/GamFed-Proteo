@@ -4,22 +4,22 @@ using UnityEngine.UI;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
-    public class EnergyBarController : MonoBehaviour
+    public class ColdBarController : MonoBehaviour
     {
         [SerializeField] private Image image;
         [SerializeField] private Gradient gradient;
 
         private void OnEnable()
         {
-            DataManager.Instance.EventData.OnChangeEnergyFillAmount += OnChangeEnergyFillAmountHandler;
+            DataManager.Instance.EventData.OnChangeColdFillAmount += OnChangeColdFillAmountHandler;
         }
 
         private void OnDisable()
         {
-            DataManager.Instance.EventData.OnChangeEnergyFillAmount -= OnChangeEnergyFillAmountHandler;
+            DataManager.Instance.EventData.OnChangeColdFillAmount -= OnChangeColdFillAmountHandler;
         }
 
-        private void OnChangeEnergyFillAmountHandler(float value)
+        private void OnChangeColdFillAmountHandler(float value)
         {
             image.fillAmount = value;
             image.color = gradient.Evaluate(value);

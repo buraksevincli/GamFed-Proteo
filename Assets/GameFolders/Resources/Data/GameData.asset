@@ -14,13 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 400
-  slowdownSpeedCoefficient: 0
   energy: 100
   forcedRestTime: 3
   energyDecreaseCoefficient: 4
   jumpEnergyDecreaseAmount: 5
   energyIncreaseCoefficient: 3
   energyIncreaseAmount: 15
+  cold: 100
+  feelColdCoefficient: 10
+  feelWarmCoefficient: 0
+  slowdownTime: 2
+  slowdownSpeedCoefficient: 0.5
   angle: 45
   magnitude: 500
   lifeTime: 5

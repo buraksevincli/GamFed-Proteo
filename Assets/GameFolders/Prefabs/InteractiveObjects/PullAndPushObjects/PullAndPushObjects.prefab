@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9167696708812120830}
   - component: {fileID: 902357009559822839}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,11 +94,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9026255241643150352}
   - component: {fileID: 1213224647704746565}
-  - component: {fileID: 9069689899970751335}
   - component: {fileID: 2707104182930167942}
-  - component: {fileID: 3436995836469561530}
-  m_Layer: 0
-  m_Name: InteractAndCollects
+  - component: {fileID: 7449520296375357020}
+  m_Layer: 15
+  m_Name: PullAndPushObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,23 +139,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &9069689899970751335
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8389116133234434222}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Constraints: 4
 --- !u!61 &2707104182930167942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +150,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -183,7 +166,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3436995836469561530
+--- !u!114 &7449520296375357020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,6 +175,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8389116133234434222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2658dba30055ae246b62f827ae05c7e5, type: 3}
+  m_Script: {fileID: 11500000, guid: a0143327a8c5942eeac2c6e97d8706b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followSpeed: 10
+  targetDistance: 2.5
+  offset: {x: 2.5, y: 0}

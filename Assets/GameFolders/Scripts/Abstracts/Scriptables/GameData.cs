@@ -10,7 +10,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [Header("Player Movement Settings")]
         [SerializeField] private float moveSpeed;
         [SerializeField] private float jumpForce;
-        [SerializeField] [Range(0, 1)] private float slowdownSpeedCoefficient;
 
         [Header("Energy Bar Settings")] 
         [SerializeField] private float energy;
@@ -19,6 +18,13 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float jumpEnergyDecreaseAmount;
         [SerializeField] private float energyIncreaseCoefficient;
         [SerializeField] private float energyIncreaseAmount;
+
+        [Header("Cold Bar Settings")]
+        [SerializeField] private float cold;
+        [SerializeField] private float feelColdCoefficient;
+        [SerializeField] private float feelWarmCoefficient;
+        [SerializeField] private float slowdownTime;
+        [SerializeField] [Range(0, 1)] private float slowdownSpeedCoefficient;
 
         [Header("Object To Be Thrown Settings")]
         [SerializeField] private float angle;
@@ -36,6 +42,11 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float Angle => angle;
         public float Magnitude => magnitude;
         public float LifeTime => lifeTime;
+        public float Cold => cold;
+        public float FeelColdCoefficient => feelColdCoefficient;
+        public float FeelWarmCoefficient => feelWarmCoefficient;
+        public float SlowdownTime => slowdownTime;
+        
         
         public float GetMoveSpeed()
         {
