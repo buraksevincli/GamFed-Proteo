@@ -14,7 +14,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public Action<float> OnChangeColdFillAmount { get; set; }
         public Action OnFeelCold { get; set; } 
         public Action OnFeelWarm { get; set; }
-        public Action OnFallTriggered { get; set; }
         public Action OnStunned { get; set; }
     }
 }

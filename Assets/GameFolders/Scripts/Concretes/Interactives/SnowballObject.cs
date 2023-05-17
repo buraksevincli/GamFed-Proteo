@@ -39,6 +39,8 @@ namespace GameFolders.Scripts.Concretes.Interactives
 
         private void SnowballMove()
         {
+            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+            
             _rigidbody2D.velocity = new Vector2(-DataManager.Instance.GameData.RollSpeed, _rigidbody2D.velocity.y);
         }
 
