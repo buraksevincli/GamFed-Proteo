@@ -28,6 +28,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private OnGround _onGround;
         private WaitForSeconds _waitForcedRestTime;
+        private WaitForSeconds _waitStunTime;
 
         private float _horizontal;
         private bool _jumpButtonDown;
@@ -44,16 +45,19 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _animator = new PlayerAnimatorController(this);
 
             _waitForcedRestTime = new WaitForSeconds(GameData.ForcedRestTime);
+            _waitStunTime = new WaitForSeconds(GameData.FallObjectStunTime);
         }
 
         private void OnEnable()
         {
             DataManager.Instance.EventData.OnEnergyOver += OnEnergyOverHandler;
+            DataManager.Instance.EventData.OnStunned += OnStunnedHandler;
         }
 
         private void OnDisable()
         {
             DataManager.Instance.EventData.OnEnergyOver -= OnEnergyOverHandler;
+            DataManager.Instance.EventData.OnStunned -= OnStunnedHandler;
             GameData.ResetSpeed();
         }
 
@@ -143,6 +147,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             StartCoroutine(ForcedRestCoroutine());
         }
+
+        private void OnStunnedHandler()
+        {
+            StartCoroutine(StunnedPlayer());
+        }
         
         public void ExcavableObjectController()
         {
@@ -182,6 +191,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             _canMove = true;
             _animator.StandUpAnimation();
+        }
+
+        private IEnumerator StunnedPlayer()
+        {
+            _canMove = false;
+
+            yield return _waitStunTime;
+
+            _canMove = true;
         }
     }
 }

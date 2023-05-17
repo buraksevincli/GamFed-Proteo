@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Abstracts.Scriptables
 {
@@ -29,6 +30,11 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float angle;
         [SerializeField] private float magnitude;
         [SerializeField] private float lifeTime;
+
+        [Header("Falling Objects Settings")]
+        [SerializeField] private float fallSpeed;
+        [SerializeField] private float fallTimeAfterTrigger;
+        [SerializeField] private float fallObjectStunTime;
         
         private float _speedCoefficient = 1f;
 
@@ -46,6 +52,10 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float FeelWarmCoefficient => feelWarmCoefficient;
         public float SlowdownTime => slowdownTime;
         public float WarmUpPercentageAfterFreeze => warmUpPercentageAfterFreeze;
+        public float FallSpeed => fallSpeed;
+        public float FallTimeAfterTrigger => fallTimeAfterTrigger;
+        public float FallObjectStunTime => fallObjectStunTime;
+        
 
         public float GetMoveSpeed()
         {

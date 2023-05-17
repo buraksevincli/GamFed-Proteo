@@ -22,10 +22,13 @@ MonoBehaviour:
   energyIncreaseAmount: 15
   cold: 100
   feelColdCoefficient: 1
-  feelWarmCoefficient: 1
+  feelWarmCoefficient: 3
   slowdownTime: 10
   slowdownSpeedCoefficient: 0.5
   warmUpPercentageAfterFreeze: 15
   angle: 45
   magnitude: 500
   lifeTime: 5
+  fallSpeed: 3
+  fallTimeAfterTrigger: 3
+  fallObjectStunTime: 3
