@@ -32,7 +32,6 @@ namespace GameFolders.Scripts.Concretes.Movements
         
         public override void InteractObjectTrigger()
         {
-            Debug.Log("kartopu çalıştı");
             StartCoroutine(InteractObjectTriggerAction());
         }
 
