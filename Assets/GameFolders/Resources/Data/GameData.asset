@@ -16,7 +16,7 @@ MonoBehaviour:
   jumpForce: 400
   energy: 100
   forcedRestTime: 3
-  energyDecreaseCoefficient: 4
+  energyDecreaseCoefficient: 10
   jumpEnergyDecreaseAmount: 5
   energyIncreaseCoefficient: 3
   energyIncreaseAmount: 15

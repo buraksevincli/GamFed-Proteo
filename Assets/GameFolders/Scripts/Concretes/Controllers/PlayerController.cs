@@ -131,8 +131,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 DataManager.Instance.EventData.OnGainEnergy?.Invoke(GameData.EnergyIncreaseCoefficient * Time.deltaTime);
             }
 
-            _animator.SetRunAnimation(_horizontal);
-            _animator.SetJumpAnimationValue(_mover.GetVelocityY());
+            if (_canMove)
+            {
+                _animator.SetRunAnimation(_horizontal);
+                _animator.SetJumpAnimationValue(_mover.GetVelocityY());
+            }
 
             if (energyController.Energy < GameData.JumpEnergyDecreaseAmount) return;
             
@@ -181,10 +184,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private IEnumerator ForcedRestCoroutine()
         {
+            while (!_onGround.IsOnGround)
+            {
+                yield return null;
+            }
+            
             _canMove = false;
 
-            _animator.SetRestAnimation();
             _animator.SetRunAnimation(0); // Temp
+            _animator.StandDownAnimation();
             _mover.FixedTick(0, 0);
 
             yield return _waitForcedRestTime;
@@ -197,6 +205,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _canMove = false;
 
+            _animator.SetJumpAnimationValue(0);
             _animator.SetRunAnimation(0);
             _mover.FixedTick(0, 0);
             

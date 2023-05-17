@@ -18,7 +18,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void PushButtonOnClick()
         {
-            DataManager.Instance.EventData.OnFollowPlayer?.Invoke();
+            DataManager.Instance.EventData.OnCheckConnection?.Invoke();
         }
     }
 }

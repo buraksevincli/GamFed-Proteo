@@ -28,10 +28,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _animator.SetFloat("IsJump",Mathf.Abs(jumpValue));
         }
 
-        public void SetRestAnimation()
+        public void StandDownAnimation()
         {
-            _animator.SetTrigger("Sit");
             _animator.SetBool("IsStand" , true);
+            _animator.SetTrigger("Stand");
         }
 
         public void StandUpAnimation()

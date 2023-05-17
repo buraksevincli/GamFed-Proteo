@@ -1,72 +1,70 @@
+using System;
+using GameFolders.Scripts.Abstracts.Utilities;
 using GameFolders.Scripts.Concretes.Controllers;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Interactives
 {
-    public class PullAndPush : MonoBehaviour
+    public class PullAndPush : MonoSingleton<PullAndPush>
     {
         [SerializeField] private Transform mouthTransform;
         [SerializeField] private LayerMask targetLayer;
         [SerializeField] private float distance;
+        [SerializeField] private float ropeTolerance;
 
-        private PushableObjectController _pushableObject;
+        private PushableObjectController _pushableObjectController;
         private Vector2 _direction = Vector2.right;
         private bool _isConnected = false;
 
         private void OnEnable()
         {
-            DataManager.Instance.EventData.OnFollowPlayer += SetLineRendererPositions;
+            DataManager.Instance.EventData.OnCheckConnection += OnCheckConnectionHandler;
+        }
+
+        private void OnDisable()
+        {
+            DataManager.Instance.EventData.OnCheckConnection -= OnCheckConnectionHandler;
         }
 
         private void Update()
         {
-            if(_isConnected) return;
-
             float horizontal = Input.GetAxis("Horizontal");
 
             if (horizontal != 0)
             {
                 _direction = new Vector2( horizontal > 0 ? 1 : -1, 0);
             }
+        }
+
+        private void OnCheckConnectionHandler()
+        {
+            if (_isConnected)
+            {
+                // break connection
+                _pushableObjectController.SetPlayer(null, 0);
+                return;
+            }
             
             RaycastHit2D hit = Physics2D.Raycast(mouthTransform.position, _direction , distance, targetLayer);
+
+            if (hit.collider == null) return;
             
-            if (hit)
-            {
-                //if(_pushableObject) return;
+            _isConnected = true;
+
+            Collider2D obj = hit.collider;
+
+            _pushableObjectController = obj.GetComponent<PushableObjectController>();
                 
-                Collider2D obj = hit.collider;
-
-                _pushableObject = obj.GetComponent<PushableObjectController>();
-            }
-            else
-            {
-                //if(!_pushableObject) return;
-                
-                BreakLineRenderer();
-                _pushableObject = null;
-            }
+            LineRendererController.Instance.OnSetLineRendererPosition(mouthTransform , _pushableObjectController.transform);
+            _pushableObjectController.SetPlayer(transform, distance + ropeTolerance);
         }
 
-        private void OnDisable()
-        {
-            DataManager.Instance.EventData.OnFollowPlayer -= SetLineRendererPositions;
-        }
-
-        private void SetLineRendererPositions()
-        {
-            if(!_pushableObject) return;
-
-            LineRendererController.Instance.OnSetLineRendererPosition(mouthTransform , _pushableObject.transform);
-            
-            _pushableObject.SetPlayer(transform);
-            _isConnected = !_isConnected;
-        }
-
-        private void BreakLineRenderer()
+        public void BreakLineRenderer()
         {
             LineRendererController.Instance.BreakTheLineRenderer();
+            _isConnected = false;
+            _pushableObjectController = null;
         }
 
 #if UNITY_EDITOR

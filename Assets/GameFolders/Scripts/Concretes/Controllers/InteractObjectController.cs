@@ -9,12 +9,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
     public class InteractObjectController : MonoBehaviour
     {
         [SerializeField] private InteractObject interactObject;
-        
+
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.TryGetComponent(out PlayerController playerController))
+            if (interactObject.gameObject.activeSelf)
             {
-                interactObject.InteractObjectTrigger();
+                if (col.TryGetComponent(out PlayerController playerController))
+                {
+                    interactObject.InteractObjectTrigger();
+                }
             }
         }
     }

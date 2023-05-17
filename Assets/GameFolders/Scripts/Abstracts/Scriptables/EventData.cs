@@ -10,7 +10,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public Action<float> OnGainEnergy { get; set; }
         public Action<float> OnChangeEnergyFillAmount { get; set; }
         public Action OnEnergyOver { get; set; }
-        public Action OnFollowPlayer { get; set; }
+        public Action OnCheckConnection { get; set; }
         public Action<float> OnChangeColdFillAmount { get; set; }
         public Action OnFeelCold { get; set; } 
         public Action OnFeelWarm { get; set; }

@@ -1836,9 +1836,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 276890309}
     m_Modifications:
+    - target: {fileID: 2257029201820963141, guid: bde76de124089274891b54fcc30f188b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167845086290590926, guid: bde76de124089274891b54fcc30f188b, type: 3}
+      propertyPath: followSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6105188021944111676, guid: bde76de124089274891b54fcc30f188b, type: 3}
       propertyPath: m_Name
       value: Boxes1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105188021944111676, guid: bde76de124089274891b54fcc30f188b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6743700454938050178, guid: bde76de124089274891b54fcc30f188b, type: 3}
       propertyPath: m_RootOrder
@@ -2360,6 +2372,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 790369426}
+    - target: {fileID: 8935536187669172272, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935536187669172272, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: ropeTolerance
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2adfe727e919c404d98943365ef35247, type: 3}
 --- !u!1001 &1591251453
@@ -2940,6 +2960,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 326033949}
+    - target: {fileID: 2163470688845390337, guid: e10ca6973469f4ec1af555f311b01904, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -206.07349
+      objectReference: {fileID: 0}
     - target: {fileID: 2163470688965759096, guid: e10ca6973469f4ec1af555f311b01904, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
