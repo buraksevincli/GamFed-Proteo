@@ -10,13 +10,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
     {
         [SerializeField] private Button pushButton;
         
-        private void OnEnable()
+        protected override void Awake()
         {
-            pushButton.onClick?.AddListener(PushButtonOnClick);
-        }
-
-        private void OnDisable()
-        {
+            base.Awake();
             pushButton.onClick?.AddListener(PushButtonOnClick);
         }
 

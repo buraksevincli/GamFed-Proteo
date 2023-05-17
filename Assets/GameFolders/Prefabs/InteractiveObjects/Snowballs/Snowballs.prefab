@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 1629070785
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0, g: 0.44900656, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,11 +94,11 @@ GameObject:
   m_Component:
   - component: {fileID: 9026255241643150352}
   - component: {fileID: 1213224647704746565}
-  - component: {fileID: 9069689899970751335}
-  - component: {fileID: 2707104182930167942}
-  - component: {fileID: 3436995836469561530}
+  - component: {fileID: 7384459070052045792}
+  - component: {fileID: 4714761930984773578}
+  - component: {fileID: 2970404635175676144}
   m_Layer: 0
-  m_Name: InteractAndCollects
+  m_Name: Snowballs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,12 +136,12 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 95f8305299540d34bb5a12450fb82dd7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &9069689899970751335
+  m_Constraints: 4
+--- !u!58 &7384459070052045792
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!61 &2707104182930167942
+--- !u!61 &4714761930984773578
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,7 +183,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3436995836469561530
+--- !u!114 &2970404635175676144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,6 +192,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8389116133234434222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2658dba30055ae246b62f827ae05c7e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6438e47331ede3e4ba34650f5ca7872c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -7,7 +7,6 @@ using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.Movements;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -29,7 +28,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private OnGround _onGround;
         private WaitForSeconds _waitForcedRestTime;
-        private PullAndPush _pullAndPush;
+        private WaitForSeconds _waitStunTime;
 
         private float _horizontal;
         private bool _jumpButtonDown;
@@ -45,19 +44,21 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _flip = new Flip(this);
             _animator = new PlayerAnimatorController(this);
 
-            _pullAndPush = GetComponent<PullAndPush>();
-
             _waitForcedRestTime = new WaitForSeconds(GameData.ForcedRestTime);
+            _waitStunTime = new WaitForSeconds(GameData.FallObjectStunTime);
         }
 
         private void OnEnable()
         {
             DataManager.Instance.EventData.OnEnergyOver += OnEnergyOverHandler;
+            DataManager.Instance.EventData.OnStunned += OnStunnedHandler;
         }
 
         private void OnDisable()
         {
             DataManager.Instance.EventData.OnEnergyOver -= OnEnergyOverHandler;
+            DataManager.Instance.EventData.OnStunned -= OnStunnedHandler;
+            GameData.ResetSpeed();
         }
 
         private void FixedUpdate()
@@ -114,6 +115,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
+            DataManager.Instance.EventData.OnFeelCold?.Invoke();
+            
             if (!_canMove)
             {
                 DataManager.Instance.EventData.OnGainEnergy?.Invoke(GameData.EnergyIncreaseCoefficient * Time.deltaTime);
@@ -145,6 +148,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
             StartCoroutine(ForcedRestCoroutine());
         }
 
+        private void OnStunnedHandler()
+        {
+            StartCoroutine(StunnedPlayer());
+        }
+        
         public void ExcavableObjectController()
         {
             if (_excavableObject.Count != 0)
@@ -183,6 +191,18 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             _canMove = true;
             _animator.StandUpAnimation();
+        }
+
+        private IEnumerator StunnedPlayer()
+        {
+            _canMove = false;
+
+            _animator.SetRunAnimation(0);
+            _mover.FixedTick(0, 0);
+            
+            yield return _waitStunTime;
+
+            _canMove = true;
         }
     }
 }

@@ -26,4 +26,3 @@ namespace GameFolders.Scripts.Concretes.Controllers
         }
     }
 }
-
