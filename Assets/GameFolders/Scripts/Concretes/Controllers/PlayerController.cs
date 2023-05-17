@@ -197,6 +197,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _canMove = false;
 
+            _animator.SetRunAnimation(0);
+            _mover.FixedTick(0, 0);
+            
             yield return _waitStunTime;
 
             _canMove = true;

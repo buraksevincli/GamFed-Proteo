@@ -29,6 +29,9 @@ MonoBehaviour:
   angle: 45
   magnitude: 500
   lifeTime: 5
-  fallSpeed: 3
+  fallSpeed: 5
   fallTimeAfterTrigger: 3
   fallObjectStunTime: 3
+  fallObjectLifeTime: 5
+  rollSpeed: 5
+  snowballLifeTime: 5

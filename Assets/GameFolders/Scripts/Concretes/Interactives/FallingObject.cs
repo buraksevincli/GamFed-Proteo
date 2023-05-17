@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
 using GameFolders.Scripts.Concretes.Controllers;
 using GameFolders.Scripts.Concretes.Managers;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Interactives

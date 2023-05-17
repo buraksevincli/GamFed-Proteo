@@ -35,6 +35,11 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float fallSpeed;
         [SerializeField] private float fallTimeAfterTrigger;
         [SerializeField] private float fallObjectStunTime;
+        [SerializeField] private float fallObjectLifeTime;
+        
+        [Header("Snowball Objects Settings")]
+        [SerializeField] private float rollSpeed;
+        [SerializeField] private float snowballLifeTime;
         
         private float _speedCoefficient = 1f;
 
@@ -55,6 +60,9 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float FallSpeed => fallSpeed;
         public float FallTimeAfterTrigger => fallTimeAfterTrigger;
         public float FallObjectStunTime => fallObjectStunTime;
+        public float RollSpeed => rollSpeed;
+        public float SnowballLifeTime => snowballLifeTime;
+        public float FallObjectLifeTime => fallObjectLifeTime;
         
 
         public float GetMoveSpeed()

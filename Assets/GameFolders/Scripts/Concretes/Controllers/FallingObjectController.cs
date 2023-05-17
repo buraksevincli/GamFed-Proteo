@@ -8,10 +8,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
     public class FallingObjectController : MonoBehaviour
     {
         private Rigidbody2D _rigidbody2D;
+        private WaitForSeconds _waitLifeTime;
+        private WaitForSeconds _waitFailTime;
 
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+            _waitLifeTime = new WaitForSeconds(DataManager.Instance.GameData.FallObjectLifeTime);
+            _waitFailTime = new WaitForSeconds(DataManager.Instance.GameData.FallTimeAfterTrigger);
         }
 
         private void OnEnable()
@@ -41,9 +45,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             FallAllert();
 
-            yield return new WaitForSeconds(DataManager.Instance.GameData.FallTimeAfterTrigger);
+            yield return _waitFailTime;
 
             FallObject();
+
+            yield return _waitLifeTime;
+
+            this.gameObject.SetActive(false);
         }
         
         private void FallAllert()
@@ -53,7 +61,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         
         private void FallObject()
         {
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, -DataManager.Instance.GameData.FallSpeed);
+            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+            _rigidbody2D.gravityScale = DataManager.Instance.GameData.FallSpeed;
         }
     }
 }
