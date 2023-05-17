@@ -2,18 +2,19 @@ using System;
 using GameFolders.Scripts.Abstracts.Interacts;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
-    public class FallObjectController : MonoBehaviour
+    public class InteractObjectController : MonoBehaviour
     {
-        [SerializeField] private FallObject fallObject;
+        [SerializeField] private InteractObject interactObject;
         
         private void OnTriggerEnter2D(Collider2D col)
         {
             if (col.TryGetComponent(out PlayerController playerController))
             {
-                fallObject.FallObjectTrigger();
+                interactObject.InteractObjectTrigger();
             }
         }
     }

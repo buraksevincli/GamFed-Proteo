@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Movements
 {
-    public class FallIcicleMovement : FallObject
+    public class InteractIcicleMovement : InteractObject
     {
         private Rigidbody2D _rigidbody2D;
 
@@ -33,7 +33,7 @@ namespace GameFolders.Scripts.Concretes.Movements
             }
         }
 
-        public override void FallObjectTrigger()
+        public override void InteractObjectTrigger()
         {
             StartCoroutine(FallObjectTriggerAction());
         }
