@@ -165,6 +165,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
                     excavableObject.SetActive(false);
                 }
                 _excavableObject.Clear();
+                
+                DataManager.Instance.EventData.OnSpendEnergy.Invoke(DataManager.Instance.GameData.ExcavableCost);
             }
         }
 
@@ -178,7 +180,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 }
                 _barkObject.Clear();
                 
-                DataManager.Instance.EventData.OnGainEnergy.Invoke(DataManager.Instance.GameData.EnergyIncreaseAmountAfterRest);
+                DataManager.Instance.EventData.OnGainEnergy.Invoke(DataManager.Instance.GameData.EnergyIncreaseAmount);
             }
         }
 

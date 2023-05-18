@@ -16,7 +16,8 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float energyIncreaseCoefficient;
         [SerializeField] private float energyDecreaseCoefficient;
         [SerializeField] private float jumpEnergyDecreaseAmount;
-        [SerializeField] private float energyIncreaseAmountAfterRest;
+        [SerializeField] private float energyIncreaseAmount;
+        [SerializeField] private float excavableCost;
 
         [Header("Cold Bar Settings")]
         [SerializeField] private float maxCold;
@@ -46,7 +47,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float JumpEnergyDecreaseAmount => jumpEnergyDecreaseAmount;
         public float EnergyIncreaseCoefficient => energyIncreaseCoefficient;
         public float MaxEnergy => maxEnergy;
-        public float EnergyIncreaseAmountAfterRest => energyIncreaseAmountAfterRest;
+        public float EnergyIncreaseAmount => energyIncreaseAmount;
         public float ForcedRestTime => forcedRestTime;
         public float Angle => angle;
         public float Magnitude => magnitude;
@@ -61,6 +62,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float FallObjectStunTime => fallObjectStunTime;
         public float SnowballLifeTime => snowballLifeTime;
         public float FallObjectLifeTime => fallObjectLifeTime;
+        public float ExcavableCost => excavableCost;
         
 
         public float GetMoveSpeed()
