@@ -41,6 +41,9 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [Header("Snowball Objects Settings")]
         [SerializeField] private float snowballLifeTime;
         
+        [Header("Crumbling Ground Settings")]
+        [SerializeField] private float groundLifeTime;
+        
         private float _speedCoefficient = 1f;
 
         public float EnergyDecreaseCoefficient => energyDecreaseCoefficient;
@@ -63,6 +66,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float SnowballLifeTime => snowballLifeTime;
         public float FallObjectLifeTime => fallObjectLifeTime;
         public float ExcavableCost => excavableCost;
+        public float GroundLifeTime => groundLifeTime;
         
 
         public float GetMoveSpeed()

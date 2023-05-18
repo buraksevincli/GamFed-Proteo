@@ -1,8 +1,5 @@
-using System;
 using GameFolders.Scripts.Abstracts.Interacts;
-using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
@@ -18,6 +15,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 {
                     interactObject.InteractObjectTrigger();
                 }
+            }
+            else
+            {
+                this.gameObject.SetActive(false);
             }
         }
     }
