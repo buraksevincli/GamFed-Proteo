@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 400
-  energy: 100
+  maxEnergy: 100
   forcedRestTime: 3
+  energyIncreaseCoefficient: 4
   energyDecreaseCoefficient: 3
   jumpEnergyDecreaseAmount: 5
-  energyIncreaseCoefficient: 4
   energyIncreaseAmount: 15
-  cold: 100
+  excavableCost: 5
+  maxCold: 100
   feelColdCoefficient: 1
   feelWarmCoefficient: 3
   slowdownTime: 10
@@ -33,5 +34,5 @@ MonoBehaviour:
   fallTimeAfterTrigger: 3
   fallObjectStunTime: 3
   fallObjectLifeTime: 5
-  rollSpeed: 5
   snowballLifeTime: 5
+  groundLifeTime: 3

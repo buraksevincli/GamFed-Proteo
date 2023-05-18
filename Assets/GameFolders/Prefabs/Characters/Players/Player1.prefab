@@ -125,11 +125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6446556456983597854, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.35
+      value: -6.82
       objectReference: {fileID: 0}
     - target: {fileID: 6446556456983597854, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: 6446556456983597854, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -210,6 +210,14 @@ PrefabInstance:
     - target: {fileID: 8037931742581226443, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040684734986396292, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040684734986396292, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: ropeTolerance
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8319132803726062303, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Layer
