@@ -16,7 +16,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Start()
         {
-            _energy = GameData.Energy;
+            _energy = GameData.MaxEnergy;
         }
 
         private void OnEnable()
@@ -35,8 +35,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (_energy > 0)
             {
-                _energy = Mathf.Clamp((_energy - energy), 0, GameData.Energy);
-                DataManager.Instance.EventData.OnChangeEnergyFillAmount?.Invoke(_energy / GameData.Energy);
+                _energy = Mathf.Clamp((_energy - energy), 0, GameData.MaxEnergy);
+                DataManager.Instance.EventData.OnChangeEnergyFillAmount?.Invoke(_energy / GameData.MaxEnergy);
             }
             else
             {
@@ -47,14 +47,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnGainEnergyHandler(float energy)
         {
-            if (energy < GameData.Energy)
+            if (energy < GameData.MaxEnergy)
             {
-                _energy = Mathf.Clamp((_energy + energy), 0, GameData.Energy);
-                DataManager.Instance.EventData.OnChangeEnergyFillAmount?.Invoke(_energy / GameData.Energy);
+                _energy = Mathf.Clamp((_energy + energy), 0, GameData.MaxEnergy);
+                DataManager.Instance.EventData.OnChangeEnergyFillAmount?.Invoke(_energy / GameData.MaxEnergy);
             }
             else
             {
-                _energy = GameData.Energy;
+                _energy = GameData.MaxEnergy;
                 DataManager.Instance.EventData.OnChangeEnergyFillAmount?.Invoke(1);
             }
         }

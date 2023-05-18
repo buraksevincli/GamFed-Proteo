@@ -178,7 +178,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 }
                 _barkObject.Clear();
                 
-                DataManager.Instance.EventData.OnGainEnergy.Invoke(DataManager.Instance.GameData.EnergyIncreaseAmount);
+                DataManager.Instance.EventData.OnGainEnergy.Invoke(DataManager.Instance.GameData.EnergyIncreaseAmountAfterRest);
             }
         }
 

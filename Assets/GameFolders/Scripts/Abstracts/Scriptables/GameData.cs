@@ -9,17 +9,17 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [Header("Player Movement Settings")]
         [SerializeField] private float moveSpeed;
         [SerializeField] private float jumpForce;
-
+        
         [Header("Energy Bar Settings")] 
-        [SerializeField] private float energy;
+        [SerializeField] private float maxEnergy;
         [SerializeField] private float forcedRestTime;
+        [SerializeField] private float energyIncreaseCoefficient;
         [SerializeField] private float energyDecreaseCoefficient;
         [SerializeField] private float jumpEnergyDecreaseAmount;
-        [SerializeField] private float energyIncreaseCoefficient;
-        [SerializeField] private float energyIncreaseAmount;
+        [SerializeField] private float energyIncreaseAmountAfterRest;
 
         [Header("Cold Bar Settings")]
-        [SerializeField] private float cold;
+        [SerializeField] private float maxCold;
         [SerializeField] private float feelColdCoefficient;
         [SerializeField] private float feelWarmCoefficient;
         [SerializeField] private float slowdownTime;
@@ -38,7 +38,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float fallObjectLifeTime;
         
         [Header("Snowball Objects Settings")]
-        [SerializeField] private float rollSpeed;
         [SerializeField] private float snowballLifeTime;
         
         private float _speedCoefficient = 1f;
@@ -46,13 +45,13 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float EnergyDecreaseCoefficient => energyDecreaseCoefficient;
         public float JumpEnergyDecreaseAmount => jumpEnergyDecreaseAmount;
         public float EnergyIncreaseCoefficient => energyIncreaseCoefficient;
-        public float Energy => energy;
-        public float EnergyIncreaseAmount => energyIncreaseAmount;
+        public float MaxEnergy => maxEnergy;
+        public float EnergyIncreaseAmountAfterRest => energyIncreaseAmountAfterRest;
         public float ForcedRestTime => forcedRestTime;
         public float Angle => angle;
         public float Magnitude => magnitude;
         public float LifeTime => lifeTime;
-        public float Cold => cold;
+        public float MaxCold => maxCold;
         public float FeelColdCoefficient => feelColdCoefficient;
         public float FeelWarmCoefficient => feelWarmCoefficient;
         public float SlowdownTime => slowdownTime;
@@ -60,7 +59,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float FallSpeed => fallSpeed;
         public float FallTimeAfterTrigger => fallTimeAfterTrigger;
         public float FallObjectStunTime => fallObjectStunTime;
-        public float RollSpeed => rollSpeed;
         public float SnowballLifeTime => snowballLifeTime;
         public float FallObjectLifeTime => fallObjectLifeTime;
         

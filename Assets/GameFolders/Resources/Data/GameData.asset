@@ -16,9 +16,9 @@ MonoBehaviour:
   jumpForce: 400
   energy: 100
   forcedRestTime: 3
-  energyDecreaseCoefficient: 10
+  energyDecreaseCoefficient: 3
   jumpEnergyDecreaseAmount: 5
-  energyIncreaseCoefficient: 3
+  energyIncreaseCoefficient: 4
   energyIncreaseAmount: 15
   cold: 100
   feelColdCoefficient: 1

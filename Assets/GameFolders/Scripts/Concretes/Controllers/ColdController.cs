@@ -29,7 +29,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (_cold > 0)
             {
                 _cold -= Time.deltaTime * GameData.FeelWarmCoefficient;
-                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
+                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.MaxCold);
             }
         }
 
@@ -37,15 +37,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if(_isFreeze) return;
             
-            if (_cold < GameData.Cold)
+            if (_cold < GameData.MaxCold)
             {
                 _cold += Time.deltaTime * GameData.FeelColdCoefficient;
-                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
+                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.MaxCold);
             }
             else
             {
                 StartCoroutine(PlayerFreezeTime());
-                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
+                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.MaxCold);
             }
         }
         
@@ -63,7 +63,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
                 _cold -= Time.deltaTime * GameData.WarmUpPercentageAfterFreeze / GameData.SlowdownTime;
                 
-                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.Cold);
+                DataManager.Instance.EventData.OnChangeColdFillAmount?.Invoke(_cold / GameData.MaxCold);
 
                 yield return null;
             }
