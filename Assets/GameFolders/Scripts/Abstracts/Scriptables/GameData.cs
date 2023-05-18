@@ -6,6 +6,8 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
     [CreateAssetMenu(fileName = "GameData",menuName = "Data/Game Data")]
     public class GameData : ScriptableObject
     { 
+        private const float FallAnimationTime = 3;
+
         [Header("Player Movement Settings")]
         [SerializeField] private float moveSpeed;
         [SerializeField] private float jumpForce;
@@ -62,13 +64,13 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public float WarmUpPercentageAfterFreeze => warmUpPercentageAfterFreeze;
         public float FallSpeed => fallSpeed;
         public float FallTimeAfterTrigger => fallTimeAfterTrigger;
+        public float FallAlertAnimatorSpeed => FallAnimationTime / fallTimeAfterTrigger;
         public float FallObjectStunTime => fallObjectStunTime;
         public float SnowballLifeTime => snowballLifeTime;
         public float FallObjectLifeTime => fallObjectLifeTime;
         public float ExcavableCost => excavableCost;
         public float GroundLifeTime => groundLifeTime;
         
-
         public float GetMoveSpeed()
         {
             return moveSpeed * _speedCoefficient;
