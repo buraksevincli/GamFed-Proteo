@@ -2008,9 +2008,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2054323691}
     m_Modifications:
+    - target: {fileID: 1373626617885220552, guid: c9bcb7623e94b8146b1509f5f14c35ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4782853739888227209, guid: c9bcb7623e94b8146b1509f5f14c35ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792597080150107104, guid: c9bcb7623e94b8146b1509f5f14c35ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6792597080150107104, guid: c9bcb7623e94b8146b1509f5f14c35ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7534633122791880650, guid: c9bcb7623e94b8146b1509f5f14c35ab, type: 3}
       propertyPath: m_Offset.x

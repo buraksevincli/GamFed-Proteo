@@ -3,6 +3,7 @@ using System.Collections;
 using GameFolders.Scripts.Abstracts.Interacts;
 using GameFolders.Scripts.Concretes.Controllers;
 using GameFolders.Scripts.Concretes.Managers;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Movements
@@ -11,12 +12,16 @@ namespace GameFolders.Scripts.Concretes.Movements
     {
         private Rigidbody2D _rigidbody2D;
 
+        private GameObject _alert;
+
         private WaitForSeconds _waitLifeTime;
         private WaitForSeconds _waitFallTime;
 
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+
+            _alert = transform.GetChild(0).gameObject;
             
             _waitLifeTime = new WaitForSeconds(DataManager.Instance.GameData.FallObjectLifeTime);
             _waitFallTime = new WaitForSeconds(DataManager.Instance.GameData.FallTimeAfterTrigger);
@@ -40,8 +45,8 @@ namespace GameFolders.Scripts.Concretes.Movements
 
         private IEnumerator FallObjectTriggerAction()
         {
-            FallObjectAlert();
-
+            StartCoroutine(FallObjectAlert());
+            
             yield return _waitFallTime;
             
             FallObjectMovement();
@@ -57,9 +62,13 @@ namespace GameFolders.Scripts.Concretes.Movements
             _rigidbody2D.gravityScale = DataManager.Instance.GameData.FallSpeed;
         }
 
-        private void FallObjectAlert()
+        private IEnumerator FallObjectAlert()
         {
-            //Fall uyarı animasyonu.
+            _alert.SetActive(true);
+            
+            yield return _waitFallTime;
+
+            _alert.SetActive(false);
         }
     }
 }
