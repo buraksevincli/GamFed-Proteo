@@ -22,6 +22,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
                     windDirection = -1f;
                     break;
             }
+            
+            DataManager.Instance.GameData.ResetWindSpeed();
         }
 
         private void OnTriggerStay2D(Collider2D other)
