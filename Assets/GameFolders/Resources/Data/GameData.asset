@@ -25,7 +25,7 @@ MonoBehaviour:
   feelColdCoefficient: 1
   feelWarmCoefficient: 3
   slowdownTime: 10
-  slowdownSpeedCoefficient: 0.5
+  coldSlowdownSpeedCoefficient: 0.5
   warmUpPercentageAfterFreeze: 15
   angle: 45
   magnitude: 500
@@ -36,3 +36,5 @@ MonoBehaviour:
   fallObjectLifeTime: 5
   snowballLifeTime: 5
   groundLifeTime: 3
+  windSlowdownSpeedCoefficient: 0.5
+  windSpeedUpCoefficient: 2

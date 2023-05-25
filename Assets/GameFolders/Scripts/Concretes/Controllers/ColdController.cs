@@ -53,7 +53,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _isFreeze = true;
             
-            GameData.Slowdown();
+            GameData.ColdSlowdown();
 
             float time = GameData.SlowdownTime;
             
@@ -68,7 +68,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 yield return null;
             }
            
-            GameData.ResetSpeed();
+            GameData.ResetColdSpeed();
             
             _isFreeze = false;
         }

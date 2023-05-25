@@ -30,7 +30,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
             float deltaDistance = Vector2.Distance(playerPosition, transform.position);
             float yDeltaDistance = Mathf.Abs(playerPosition.y - transform.position.y) + 0.5f;
             
-            if (!(deltaDistance > _distance) && !(deltaDistance < transform.localScale.x + 0.2f) && !(yDeltaDistance <= 0.25f)) return;
+            if (!(deltaDistance > _distance) && 
+                !(deltaDistance < transform.localScale.x + 0.2f) && 
+                !(yDeltaDistance <= 0.25f)) return;
             
             SetPlayer(null, 0);
         }

@@ -26,7 +26,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [SerializeField] private float feelColdCoefficient;
         [SerializeField] private float feelWarmCoefficient;
         [SerializeField] private float slowdownTime;
-        [SerializeField] [Range(0, 1)] private float slowdownSpeedCoefficient;
+        [SerializeField] [Range(0, 1)] private float coldSlowdownSpeedCoefficient;
         [SerializeField] private float warmUpPercentageAfterFreeze;
 
         [Header("Object To Be Thrown Settings")]
@@ -46,7 +46,12 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [Header("Crumbling Ground Settings")]
         [SerializeField] private float groundLifeTime;
         
-        private float _speedCoefficient = 1f;
+        [Header("Crumbling Ground Settings")]
+        [SerializeField] [Range(0, 1)] private float windSlowdownSpeedCoefficient;
+        [SerializeField] [Range(1, 3)] private float windSpeedUpCoefficient;
+        
+        private float _coldSpeedCoefficient = 1f;
+        private float _windSpeedCoefficient = 1f;
 
         public float EnergyDecreaseCoefficient => energyDecreaseCoefficient;
         public float JumpEnergyDecreaseAmount => jumpEnergyDecreaseAmount;
@@ -73,22 +78,37 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         
         public float GetMoveSpeed()
         {
-            return moveSpeed * _speedCoefficient;
+            return moveSpeed * _coldSpeedCoefficient * _windSpeedCoefficient;
         }
 
         public float GetJumpForce()
         {
-            return jumpForce * _speedCoefficient;
+            return jumpForce * _coldSpeedCoefficient;
         }
 
-        public void Slowdown()
+        public void ColdSlowdown()
         {
-            _speedCoefficient = slowdownSpeedCoefficient;
+            _coldSpeedCoefficient = coldSlowdownSpeedCoefficient;
         }
 
-        public void ResetSpeed()
+        public void ResetColdSpeed()
         {
-            _speedCoefficient = 1f;
+            _coldSpeedCoefficient = 1f;
+        }
+
+        public void WindSlowdown()
+        {
+            _windSpeedCoefficient = windSlowdownSpeedCoefficient;
+        }
+
+        public void WindSpeedUp()
+        {
+            _windSpeedCoefficient = windSpeedUpCoefficient;
+        }
+
+        public void ResetWindSpeed()
+        {
+            _windSpeedCoefficient = 1f;
         }
     }
 }

@@ -58,7 +58,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             DataManager.Instance.EventData.OnEnergyOver -= OnEnergyOverHandler;
             DataManager.Instance.EventData.OnStunned -= OnStunnedHandler;
-            GameData.ResetSpeed();
+            GameData.ResetColdSpeed();
         }
 
         private void FixedUpdate()
