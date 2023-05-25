@@ -35,6 +35,6 @@ MonoBehaviour:
   fallObjectStunTime: 3
   fallObjectLifeTime: 5
   snowballLifeTime: 5
-  groundLifeTime: 3
+  groundLifeTime: 1
   windSlowdownSpeedCoefficient: 0.5
   windSpeedUpCoefficient: 2
