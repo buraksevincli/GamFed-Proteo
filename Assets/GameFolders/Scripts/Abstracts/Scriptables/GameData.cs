@@ -46,7 +46,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         [Header("Crumbling Ground Settings")]
         [SerializeField] private float groundLifeTime;
         
-        [Header("Crumbling Ground Settings")]
+        [Header("Wind Settings")]
         [SerializeField] [Range(0, 1)] private float windSlowdownSpeedCoefficient;
         [SerializeField] [Range(1, 3)] private float windSpeedUpCoefficient;
         
