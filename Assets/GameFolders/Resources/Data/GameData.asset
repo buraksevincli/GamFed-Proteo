@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 400
-  maxEnergy: 100
+  maxEnergy: 10000
   forcedRestTime: 3
   energyIncreaseCoefficient: 4
   energyDecreaseCoefficient: 3
@@ -36,5 +36,5 @@ MonoBehaviour:
   fallObjectLifeTime: 5
   snowballLifeTime: 5
   groundLifeTime: 1
-  windSlowdownSpeedCoefficient: 0.5
+  windSlowdownSpeedCoefficient: 0.2
   windSpeedUpCoefficient: 2
