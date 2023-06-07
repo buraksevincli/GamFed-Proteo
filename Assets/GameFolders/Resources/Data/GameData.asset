@@ -22,7 +22,7 @@ MonoBehaviour:
   energyIncreaseAmount: 15
   excavableCost: 5
   maxCold: 100
-  feelColdCoefficient: 2
+  feelColdCoefficient: 1
   feelWarmCoefficient: 3
   slowdownTime: 10
   coldSlowdownSpeedCoefficient: 0.5
