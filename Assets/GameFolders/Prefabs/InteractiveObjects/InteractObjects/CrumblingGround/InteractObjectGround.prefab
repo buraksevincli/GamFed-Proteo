@@ -18,18 +18,22 @@ PrefabInstance:
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+      objectReference: {fileID: 1492911118, guid: e4b6ba04ecf25474db3164d1b2fb7b57, type: 3}
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Color.b
-      value: 0.24528301
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Color.g
-      value: 0.24528301
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Color.r
-      value: 0.24528301
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8389116133234434222, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Name
@@ -41,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83,6 +87,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9158198119827970512, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4666949140166761339, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
@@ -91,18 +99,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4012638513612185606, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
   m_PrefabInstance: {fileID: 2312352613378475664}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3397170565431431602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709363468235777686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a433326ab9382d4b9b71494834981c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &3995134363189389134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120,7 +116,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -129,3 +125,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3397170565431431602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709363468235777686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a433326ab9382d4b9b71494834981c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,7 +14,15 @@ PrefabInstance:
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+      objectReference: {fileID: 1842537038, guid: e4b6ba04ecf25474db3164d1b2fb7b57, type: 3}
+    - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7427676970637319282, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Material
       value: 
@@ -87,3 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac91f40d12c10348b6bafb29faa1981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snowballMoveSpeed: 0
