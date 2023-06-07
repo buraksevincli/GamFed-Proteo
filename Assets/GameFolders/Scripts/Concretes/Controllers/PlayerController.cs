@@ -115,7 +115,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
-            DataManager.Instance.EventData.OnFeelCold?.Invoke();
+            //DataManager.Instance.EventData.OnFeelCold?.Invoke();
             
             if (!_canMove)
             {
