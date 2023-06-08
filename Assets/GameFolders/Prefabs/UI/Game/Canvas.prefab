@@ -119,7 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
-  pushButton: {fileID: 5873960810439867353}
 --- !u!1 &2163470688845390366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1040,7 @@ GameObject:
   - component: {fileID: 9205607078051568638}
   - component: {fileID: 1431613021086177758}
   - component: {fileID: 5873960810439867353}
+  - component: {fileID: 2641583069426756199}
   m_Layer: 5
   m_Name: PushButton
   m_TagString: Untagged
@@ -1151,6 +1151,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2641583069426756199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105548444770511330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef10a4096d994db48ea129b17fb8d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3298444502206009709
 GameObject:
   m_ObjectHideFlags: 0

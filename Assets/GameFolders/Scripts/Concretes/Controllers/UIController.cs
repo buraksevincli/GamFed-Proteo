@@ -8,17 +8,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 {
     public class UIController : MonoSingleton<UIController>
     {
-        [SerializeField] private Button pushButton;
-        
-        protected override void Awake()
-        {
-            base.Awake();
-            pushButton.onClick?.AddListener(PushButtonOnClick);
-        }
 
-        private void PushButtonOnClick()
-        {
-            DataManager.Instance.EventData.OnCheckConnection?.Invoke();
-        }
     }
 }

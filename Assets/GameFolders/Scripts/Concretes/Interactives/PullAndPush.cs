@@ -27,6 +27,13 @@ namespace GameFolders.Scripts.Concretes.Interactives
             DataManager.Instance.EventData.OnCheckConnection -= OnCheckConnectionHandler;
         }
 
+        private void FixedUpdate()
+        {
+            RaycastHit2D hit = Physics2D.Raycast(mouthTransform.position, _direction , distance, targetLayer);
+            
+            DataManager.Instance.EventData.OnChangeStatuePushButton?.Invoke(hit.collider);
+        }
+
         private void Update()
         {
             float horizontal = Input.GetAxis("Horizontal");
