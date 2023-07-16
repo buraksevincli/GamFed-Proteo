@@ -14,6 +14,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private EnergyController energyController;
+        [SerializeField] private GameObject collectEffect;
+        [SerializeField] private GameObject pufEffect;
         
         private readonly List<GameObject> _excavableObject = new List<GameObject>();
         private readonly List<GameObject> _barkObject = new List<GameObject>();
@@ -163,6 +165,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 foreach (GameObject excavableObject in _excavableObject)
                 {
                     excavableObject.SetActive(false);
+                    StartCoroutine(PufEffect(excavableObject));
                 }
                 _excavableObject.Clear();
                 
@@ -177,6 +180,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 foreach (GameObject barkObject in _barkObject)
                 {
                     barkObject.SetActive(false);
+                    StartCoroutine(CollectEffect(barkObject));
                 }
                 _barkObject.Clear();
                 
@@ -214,6 +218,26 @@ namespace GameFolders.Scripts.Concretes.Controllers
             yield return _waitStunTime;
 
             _canMove = true;
+        }
+
+        private IEnumerator CollectEffect(GameObject gameObject)
+        {
+            collectEffect.transform.position = gameObject.transform.position;
+            collectEffect.SetActive(true);
+
+            yield return new WaitForSeconds(.4f);
+
+            collectEffect.SetActive(false);
+        }
+        
+        private IEnumerator PufEffect(GameObject gameObject)
+        {
+            pufEffect.transform.position = gameObject.transform.position;
+            pufEffect.SetActive(true);
+
+            yield return new WaitForSeconds(.6f);
+
+            pufEffect.SetActive(false);
         }
     }
 }

@@ -30,8 +30,8 @@ namespace GameFolders.Scripts.Concretes.Interactives
         private void FixedUpdate()
         {
             RaycastHit2D hit = Physics2D.Raycast(mouthTransform.position, _direction , distance, targetLayer);
-            
-            DataManager.Instance.EventData.OnChangeStatuePushButton?.Invoke(hit.collider);
+
+            DataManager.Instance.EventData.OnChangeStatuePushButton?.Invoke(_isConnected || hit.collider);
         }
 
         private void Update()
