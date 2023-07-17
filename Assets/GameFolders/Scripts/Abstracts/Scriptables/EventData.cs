@@ -16,5 +16,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public Action OnFeelCold { get; set; } 
         public Action OnFeelWarm { get; set; }
         public Action OnStunned { get; set; }
+        public Action OnClothesCollect { get; set; }
     }
 }

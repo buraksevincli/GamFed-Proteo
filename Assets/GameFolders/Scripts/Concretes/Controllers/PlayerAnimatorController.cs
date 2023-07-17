@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Abstracts.Movements;
 using UnityEngine;
 
@@ -37,6 +36,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
         public void StandUpAnimation()
         {
             _animator.SetBool("IsStand" , false);
+        }
+
+        public void SetBarkAnimation()
+        {
+            _animator.SetTrigger("Bark");
         }
     }
 }

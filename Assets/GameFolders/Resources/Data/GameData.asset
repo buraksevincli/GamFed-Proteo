@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 400
-  maxEnergy: 10000
+  maxEnergy: 100
   forcedRestTime: 3
-  energyIncreaseCoefficient: 4
-  energyDecreaseCoefficient: 3
+  energyIncreaseCoefficient: 5
+  energyDecreaseCoefficient: 1
   jumpEnergyDecreaseAmount: 5
   energyIncreaseAmount: 15
   excavableCost: 5
-  maxCold: 100
+  maxCold: 1000000
   feelColdCoefficient: 1
   feelWarmCoefficient: 1
   slowdownTime: 10

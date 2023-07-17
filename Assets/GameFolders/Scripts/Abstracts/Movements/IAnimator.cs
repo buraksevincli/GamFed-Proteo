@@ -9,5 +9,6 @@ namespace GameFolders.Scripts.Abstracts.Movements
         void SetJumpAnimationValue(float jumpValue);
         void StandDownAnimation();
         void StandUpAnimation();
+        void SetBarkAnimation();
     }
 }

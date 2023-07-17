@@ -1,3 +1,4 @@
+using GameFolders.Scripts.Concretes.UI;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -10,6 +11,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
+            if (MissionPanel.Instance.MissionComplete)
+            {
+                target.gameObject.SetActive(true);
+            }
+            
             if (!target.gameObject.activeSelf)
             {
                 arrow.gameObject.SetActive(false);

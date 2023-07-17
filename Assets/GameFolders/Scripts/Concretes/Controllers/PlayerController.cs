@@ -175,6 +175,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         public void BarkObjectController()
         {
+            _animator.SetBarkAnimation();
+
             if (_barkObject.Count != 0)
             {
                 foreach (GameObject barkObject in _barkObject)
@@ -183,6 +185,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
                     StartCoroutine(CollectEffect(barkObject));
                 }
                 _barkObject.Clear();
+                
+                DataManager.Instance.EventData.OnClothesCollect?.Invoke();
                 
                 DataManager.Instance.EventData.OnGainEnergy.Invoke(DataManager.Instance.GameData.EnergyIncreaseAmount);
             }
