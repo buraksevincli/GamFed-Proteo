@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1842537038, guid: e4b6ba04ecf25474db3164d1b2fb7b57, type: 3}
+      objectReference: {fileID: 21300000, guid: b28a61488e5082b4e9cd0e1b37a47ff2, type: 3}
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Color.g
       value: 1
@@ -22,6 +22,14 @@ PrefabInstance:
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666949140166761339, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Radius
+      value: 0.37516055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666949140166761339, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0037830174
       objectReference: {fileID: 0}
     - target: {fileID: 7427676970637319282, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Material
@@ -73,6 +81,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158198119827970512, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

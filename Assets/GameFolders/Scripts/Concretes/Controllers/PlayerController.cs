@@ -78,6 +78,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
                 DataManager.Instance.EventData.OnSpendEnergy?.Invoke(GameData.JumpEnergyDecreaseAmount);
                 _jump.FixedTick(GameData.GetJumpForce());
+                
                 _jumpButtonDown = false;
             }
         }
@@ -118,7 +119,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void Update()
         {
             //DataManager.Instance.EventData.OnFeelCold?.Invoke();
-            
             if (!_canMove)
             {
                 DataManager.Instance.EventData.OnGainEnergy?.Invoke(GameData.EnergyIncreaseCoefficient * Time.deltaTime);
@@ -146,6 +146,12 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _animator.SetJumpAnimation();
                 _jumpButtonDown = true;
             }
+
+            // if (_onGround.IsOnGround)
+            // {
+            //     Vector2 idleColliderSize = new Vector2(1.224049f, 1.183167f);
+            //     _collider2D.size = idleColliderSize;
+            // }
         }
 
         private void OnEnergyOverHandler()
