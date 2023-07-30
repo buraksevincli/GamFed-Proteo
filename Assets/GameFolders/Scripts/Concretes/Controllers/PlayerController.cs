@@ -146,12 +146,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _animator.SetJumpAnimation();
                 _jumpButtonDown = true;
             }
-
-            // if (_onGround.IsOnGround)
-            // {
-            //     Vector2 idleColliderSize = new Vector2(1.224049f, 1.183167f);
-            //     _collider2D.size = idleColliderSize;
-            // }
         }
 
         private void OnEnergyOverHandler()

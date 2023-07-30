@@ -1,9 +1,7 @@
-using System;
 using System.Collections;
 using GameFolders.Scripts.Abstracts.Interacts;
 using GameFolders.Scripts.Concretes.Controllers;
 using GameFolders.Scripts.Concretes.Managers;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Movements
@@ -35,6 +33,10 @@ namespace GameFolders.Scripts.Concretes.Movements
             {
                 this.gameObject.SetActive(false);
                 DataManager.Instance.EventData.OnStunned?.Invoke();
+            }
+            else
+            {
+                this.gameObject.SetActive(false);
             }
         }
 

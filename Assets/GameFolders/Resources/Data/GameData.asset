@@ -18,7 +18,7 @@ MonoBehaviour:
   forcedRestTime: 3
   energyIncreaseCoefficient: 5
   energyDecreaseCoefficient: 1
-  jumpEnergyDecreaseAmount: 5
+  jumpEnergyDecreaseAmount: 0
   energyIncreaseAmount: 15
   excavableCost: 5
   maxCold: 1000000

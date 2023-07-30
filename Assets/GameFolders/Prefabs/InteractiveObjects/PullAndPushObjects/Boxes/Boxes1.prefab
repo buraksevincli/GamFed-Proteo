@@ -47,6 +47,22 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2707104182930167942, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9850128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707104182930167942, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
+      propertyPath: m_Size.y
+      value: 0.98201597
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707104182930167942, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0014980733
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707104182930167942, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0000008940697
+      objectReference: {fileID: 0}
     - target: {fileID: 8389116133234434222, guid: ad0bbf79ac9630a42ba5a6e0d6163417, type: 3}
       propertyPath: m_Name
       value: Boxes1
