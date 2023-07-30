@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 *.dwlt
 *.dwlt
+ProjectSettings/EditorBuildSettings.asset
+UserSettings/EditorUserSettings.asset
+UserSettings/Layouts/default-2021.dwlt
