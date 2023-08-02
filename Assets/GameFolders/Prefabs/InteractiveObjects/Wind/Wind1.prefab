@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2528456294113027513, guid: 0ef9a4cac4ec63147b18bf01d63c11b5, type: 3}
       propertyPath: m_Name
-      value: Wind
+      value: Wind1
       objectReference: {fileID: 0}
     - target: {fileID: 2528456294113027515, guid: 0ef9a4cac4ec63147b18bf01d63c11b5, type: 3}
       propertyPath: m_RootOrder
@@ -55,5 +55,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2528456294132546052, guid: 0ef9a4cac4ec63147b18bf01d63c11b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fe1e8c559d6fb5844884d2e81df44743, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef9a4cac4ec63147b18bf01d63c11b5, type: 3}

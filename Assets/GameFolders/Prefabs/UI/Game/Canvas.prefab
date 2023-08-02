@@ -68,15 +68,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0/5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 47be0c29a89f8814b9d14130592d59a0, type: 2}
-  m_sharedMaterial: {fileID: -6627962265560446539, guid: 47be0c29a89f8814b9d14130592d59a0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6017d297b57d9a74c8020882787716a1, type: 2}
+  m_sharedMaterial: {fileID: -7419797337863242201, guid: 6017d297b57d9a74c8020882787716a1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284843052
+  m_fontColor: {r: 0.17328227, g: 0.5188679, b: 0.39495295, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1530,4 +1530,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4de64465a3be694f87d133d159b34aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 0
   clothesText: {fileID: 5269800380516208728}
