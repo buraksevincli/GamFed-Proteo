@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 902357009559822839, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -924931366, guid: 124aaf45ccf60b542b878f41afda126e, type: 3}
+    - target: {fileID: 902357009559822839, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902357009559822839, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902357009559822839, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8389116133234434222, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
       propertyPath: m_Name
       value: CampFire1
@@ -55,6 +71,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9167696708812120830, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167696708812120830, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167696708812120830, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167696708812120830, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167696708812120830, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167696708812120830, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3645208894476083967, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+--- !u!1 &6551875469524681532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4577707389488587735, guid: fefb72b2fa9c40f4d9ad8f562da6ce41, type: 3}
+  m_PrefabInstance: {fileID: 7308137797300822251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3875097778597271188
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551875469524681532}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b05c3eb358d9ef746b8050571faa9ef7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

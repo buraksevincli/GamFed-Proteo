@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/GameFolders/Scenes/MainMenu.unity
     guid: f1ce3b80ecb5146998f7d9f083a1022f
   - enabled: 1
+    path: Assets/GameFolders/Scenes/Training1.unity
+    guid: cad0f6539565dd74a981e4c6dfdcb739
+  - enabled: 1
+    path: Assets/GameFolders/Scenes/Training2.unity
+    guid: 035c3d78216ceb94da753de6412c56a4
+  - enabled: 1
+    path: Assets/GameFolders/Scenes/Training3.unity
+    guid: 9b19e14558083874589da06563571d66
+  - enabled: 1
+    path: Assets/GameFolders/Scenes/Training5.unity
+    guid: 58469c1ff1924344c920dd8b6c370305
+  - enabled: 1
+    path: Assets/GameFolders/Scenes/Training6.unity
+    guid: a3acd2a9535ff9f43a890092a9bd7132
+  - enabled: 1
     path: Assets/GameFolders/Scenes/JungleLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

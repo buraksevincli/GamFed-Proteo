@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906392023699109787, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1906392023699109787, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Offset.x
@@ -32,9 +32,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3076598093945359624, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: pufEffect
+      value: 
+      objectReference: {fileID: 4768234489609840961, guid: 09d6ef15e67dcca40b50a2fa1c2c1d49, type: 3}
+    - target: {fileID: 3076598093945359624, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: collectEffect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4634932193134347542, guid: 68457b48171807a48b7216d205971640, type: 3}
     - target: {fileID: 3544121054960556187, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1
@@ -65,11 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6446556456983597854, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.55
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6446556456983597854, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -37.65
+      value: -56.88
       objectReference: {fileID: 0}
     - target: {fileID: 6446556456983597854, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -139,13 +143,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6511182331521296129, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6763126409425936949, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6763126409425936949, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7463850574335019191, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -169,45 +177,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
---- !u!1 &3237337905133780029 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4574095191615049353, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
-  m_PrefabInstance: {fileID: 1411639870709723828}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &928655234835787276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3237337905133780029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &5395842364762469718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6446556457667512290, guid: 506fb93c3231c2649b233b1c1a25698f, type: 3}
@@ -220,7 +189,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5395842364762469718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

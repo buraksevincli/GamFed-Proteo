@@ -20,11 +20,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
             DataManager.Instance.EventData.OnChangeEnergyFillAmount -= OnChangeEnergyFillAmountHandler;
         }
 
-        private void Update()
-        {
-            DataManager.Instance.EventData.OnFeelCold?.Invoke();
-        }
-
         private void OnChangeEnergyFillAmountHandler(float value)
         {
             image.fillAmount = value;

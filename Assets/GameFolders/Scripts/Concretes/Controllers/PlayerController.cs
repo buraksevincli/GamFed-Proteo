@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using GameFolders.Scripts.Abstracts.Inputs;
 using GameFolders.Scripts.Abstracts.Movements;
 using GameFolders.Scripts.Abstracts.Scriptables;
-using GameFolders.Scripts.Concretes.Inputs;
 using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.Movements;
@@ -20,7 +18,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private readonly List<GameObject> _excavableObject = new List<GameObject>();
         private readonly List<GameObject> _barkObject = new List<GameObject>();
 
-        private IPlayerInput _input;
         private IMover _mover;
         private IJump _jump;
         private IFlip _flip;
@@ -40,7 +37,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _onGround = GetComponent<OnGround>();
 
-            _input = new PcInput();
             _mover = new Mover(this);
             _jump = new Jump(this);
             _flip = new Flip(this);
@@ -118,7 +114,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
-            //DataManager.Instance.EventData.OnFeelCold?.Invoke();
             if (!_canMove)
             {
                 DataManager.Instance.EventData.OnGainEnergy?.Invoke(GameData.EnergyIncreaseCoefficient * Time.deltaTime);
@@ -126,7 +121,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 return;
             }
             
-            _horizontal = _input.Horizontal;
+            _horizontal = Input.GetAxis("Horizontal");
 
             if (_horizontal == 0)
             {
@@ -141,7 +136,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             if (energyController.Energy < GameData.JumpEnergyDecreaseAmount) return;
             
-            if (_input.JumpButtonDown && _onGround.IsOnGround)
+            if (Input.GetButtonDown("Jump") && _onGround.IsOnGround)
             {
                 _animator.SetJumpAnimation();
                 _jumpButtonDown = true;
@@ -177,6 +172,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _animator.SetBarkAnimation();
 
+            if (LevelTargetController.Instance != null && LevelTargetController.Instance.LevelCompleted)
+            {
+                LevelTargetController.Instance.LevelEnded();
+            }
+            
             if (_barkObject.Count != 0)
             {
                 foreach (GameObject barkObject in _barkObject)
@@ -226,22 +226,28 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private IEnumerator CollectEffect(GameObject gameObject)
         {
-            collectEffect.transform.position = gameObject.transform.position;
-            collectEffect.SetActive(true);
+            GameObject newCollecEffect = Instantiate(collectEffect, gameObject.transform.position, gameObject.transform.rotation);
 
-            yield return new WaitForSeconds(.4f);
+            yield return new WaitForSeconds(.5f);
 
-            collectEffect.SetActive(false);
+            Destroy(newCollecEffect);
         }
         
         private IEnumerator PufEffect(GameObject gameObject)
         {
-            pufEffect.transform.position = gameObject.transform.position;
-            pufEffect.SetActive(true);
+            GameObject newPufEffect = Instantiate(pufEffect, gameObject.transform.position, gameObject.transform.rotation);
+            
+            yield return new WaitForSeconds(.5f);
 
-            yield return new WaitForSeconds(.6f);
+            Destroy(newPufEffect);
+        }
 
-            pufEffect.SetActive(false);
+        public void JumpButtonDown()
+        {
+            if (_onGround.IsOnGround)
+            {
+                _jumpButtonDown = true;
+            }
         }
     }
 }

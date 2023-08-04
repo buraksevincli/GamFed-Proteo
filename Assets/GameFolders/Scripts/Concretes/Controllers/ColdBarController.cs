@@ -1,3 +1,4 @@
+using System;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void OnDisable()
         {
             DataManager.Instance.EventData.OnChangeColdFillAmount -= OnChangeColdFillAmountHandler;
+        }
+
+        private void Update()
+        {
+            DataManager.Instance.EventData.OnFeelCold?.Invoke();
         }
 
         private void OnChangeColdFillAmountHandler(float value)
