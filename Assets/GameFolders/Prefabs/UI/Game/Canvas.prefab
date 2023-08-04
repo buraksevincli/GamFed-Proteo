@@ -68,15 +68,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0/5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6017d297b57d9a74c8020882787716a1, type: 2}
-  m_sharedMaterial: {fileID: -7419797337863242201, guid: 6017d297b57d9a74c8020882787716a1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9328ceafae88f34469053746f857004a, type: 2}
+  m_sharedMaterial: {fileID: -6688615290589354387, guid: 9328ceafae88f34469053746f857004a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284843052
-  m_fontColor: {r: 0.17328227, g: 0.5188679, b: 0.39495295, a: 1}
+    rgba: 4279637524
+  m_fontColor: {r: 0.0796191, g: 0.084905684, b: 0.08443577, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -2.3952637}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 241726707, guid: f65d52055fe01b247ab270046ba68a9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a99a6eef844dfc84190310f3bfa5df62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
