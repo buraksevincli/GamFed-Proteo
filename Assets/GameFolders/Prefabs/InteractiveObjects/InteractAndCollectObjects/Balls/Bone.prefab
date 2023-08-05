@@ -10,22 +10,30 @@ PrefabInstance:
     - target: {fileID: 902357009559822839, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+      objectReference: {fileID: 21300000, guid: 4612d1061375b344a9047d6a688ef93b, type: 3}
     - target: {fileID: 902357009559822839, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
       propertyPath: m_Color.b
-      value: 0.4362693
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 902357009559822839, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 902357009559822839, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
       propertyPath: m_Color.r
-      value: 0.509434
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577707389488587735, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8389116133234434222, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
       propertyPath: m_Name
-      value: Ball2
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389116133234434222, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: 7058f0b8614629b4d8a3bb264c555dfd, type: 3}
       propertyPath: m_RootOrder

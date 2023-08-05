@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
@@ -12,6 +9,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
     {
         [SerializeField] private float minSpawnTime;
         [SerializeField] private float maxSpawnTime;
+        [SerializeField] private int direction;
         
         private float _maxSpawnTime;
         private float _currentSpawnTime = 0f;
@@ -35,6 +33,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             InteractAndCollectObject interactObject = SpawnerManager.Instance.GetPool();
 
+            interactObject.direction = direction;
             interactObject.transform.parent = this.transform;
             interactObject.transform.position = this.transform.position;
             interactObject.gameObject.SetActive(true);

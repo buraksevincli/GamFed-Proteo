@@ -5,6 +5,8 @@ namespace GameFolders.Scripts.Concretes.Interactives
 {
     public class InteractAndCollectObject : MonoBehaviour
     {
+        public int direction;
+        
         private float _currentLifeTime = 0;
         private Rigidbody2D _rigidbody2D;
 
@@ -36,7 +38,7 @@ namespace GameFolders.Scripts.Concretes.Interactives
                 Mathf.Sin(DataManager.Instance.GameData.Angle * Mathf.Deg2Rad)) * 
                             DataManager.Instance.GameData.Magnitude;
             
-            _rigidbody2D.AddForce(force);
+            _rigidbody2D.AddForce(force * direction);
         }
 
         public void SetThis()

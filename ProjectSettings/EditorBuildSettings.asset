@@ -15,11 +15,14 @@ EditorBuildSettings:
     path: Assets/GameFolders/Scenes/Training2.unity
     guid: cad0f6539565dd74a981e4c6dfdcb739
   - enabled: 1
-    path: Assets/GameFolders/Scenes/Training3.unity
+    path: Assets/GameFolders/Scenes/Training2.unity
     guid: 035c3d78216ceb94da753de6412c56a4
   - enabled: 1
-    path: Assets/GameFolders/Scenes/Training4.unity
+    path: Assets/GameFolders/Scenes/Training3.unity
     guid: 9b19e14558083874589da06563571d66
+  - enabled: 1
+    path: Assets/GameFolders/Scenes/Training4.unity
+    guid: 1fe7bd7c952ae75489bf531a1dd2f242
   - enabled: 1
     path: Assets/GameFolders/Scenes/Training5.unity
     guid: 58469c1ff1924344c920dd8b6c370305
