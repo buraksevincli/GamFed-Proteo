@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1559792627128848061}
   - component: {fileID: 7130913582658692437}
+  - component: {fileID: 9088046691560429515}
+  - component: {fileID: 1016688212033434467}
   m_Layer: 0
   m_Name: Stalagmite
   m_TagString: Untagged
@@ -84,3 +86,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &9088046691560429515
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952078008480652954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.96875, y: 1.125}
+    newSize: {x: 1.96875, y: 1.125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.96875, y: 1.125}
+  m_EdgeRadius: 0
+--- !u!114 &1016688212033434467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952078008480652954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ed7a98796ebb4eaee6884649a2297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0.38412246, g: 0.8102235, b: 0.9811321, a: 0}
