@@ -2052,6 +2052,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 937929312}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JumpButtonDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Controllers.PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 937929312}
+    - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExcavableObjectController
+      objectReference: {fileID: 0}
     - target: {fileID: 6587108914675663057, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_Name
       value: GameCanvas
@@ -2140,8 +2176,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 937929312}
+    - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BarkObjectController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+--- !u!114 &364106679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 920507818680176529, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+  m_PrefabInstance: {fileID: 364106678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &368388203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4267497203727027547, guid: 132f7edf5f3677e489088f562c687f6e, type: 3}
@@ -4099,6 +4154,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 364106679}
     - target: {fileID: 5395842363550359978, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4157,6 +4216,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+--- !u!114 &937929312 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+  m_PrefabInstance: {fileID: 937929311}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025d0a830e0bb094d8e2bd050c931784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942328264
 GameObject:
   m_ObjectHideFlags: 0

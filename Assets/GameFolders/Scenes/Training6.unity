@@ -1029,6 +1029,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069622491}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JumpButtonDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Controllers.PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1149,6 +1177,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6587108914320686923, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
   m_PrefabInstance: {fileID: 635570433}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &635570436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 920507818680176529, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+  m_PrefabInstance: {fileID: 635570433}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &654414731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,6 +1295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 635570436}
     - target: {fileID: 5317479224792978869, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: m_IsActive
       value: 0

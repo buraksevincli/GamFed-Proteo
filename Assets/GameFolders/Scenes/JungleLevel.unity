@@ -13697,6 +13697,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 6587108914082049922}
     - target: {fileID: 5395842363550359978, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -38029,6 +38033,17 @@ PrefabInstance:
       objectReference: {fileID: 326033949}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+--- !u!114 &6587108914082049922 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 920507818680176529, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+  m_PrefabInstance: {fileID: 6587108914082049921}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7179143820436789142
 PrefabInstance:
   m_ObjectHideFlags: 0

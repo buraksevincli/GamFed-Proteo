@@ -6,11 +6,14 @@ using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.Movements;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
+        [SerializeField] private Joystick joystick;
+
         [SerializeField] private EnergyController energyController;
         [SerializeField] private GameObject collectEffect;
         [SerializeField] private GameObject pufEffect;
@@ -120,9 +123,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _horizontal = 0;
                 return;
             }
-            
+
             _horizontal = Input.GetAxis("Horizontal");
 
+            //_horizontal = joystick.Horizontal;
+            
             if (_horizontal == 0)
             {
                 DataManager.Instance.EventData.OnGainEnergy?.Invoke(GameData.EnergyIncreaseCoefficient * Time.deltaTime);

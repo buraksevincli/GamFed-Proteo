@@ -389,6 +389,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 153388494}
+    - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: pufEffect
       value: 
       objectReference: {fileID: 4768234489609840961, guid: 09d6ef15e67dcca40b50a2fa1c2c1d49, type: 3}
@@ -466,6 +470,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+--- !u!114 &128885437 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+  m_PrefabInstance: {fileID: 128885436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025d0a830e0bb094d8e2bd050c931784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &153388491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -476,6 +491,42 @@ PrefabInstance:
     - target: {fileID: 1632707148087491762, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128885437}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JumpButtonDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Controllers.PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128885437}
+    - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExcavableObjectController
       objectReference: {fileID: 0}
     - target: {fileID: 6587108914675663057, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_Name
@@ -565,6 +616,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 128885437}
+    - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BarkObjectController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
 --- !u!1 &153388492 stripped
@@ -577,6 +636,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6587108914320686923, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
   m_PrefabInstance: {fileID: 153388491}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &153388494 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 920507818680176529, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+  m_PrefabInstance: {fileID: 153388491}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177050676
 GameObject:
   m_ObjectHideFlags: 0

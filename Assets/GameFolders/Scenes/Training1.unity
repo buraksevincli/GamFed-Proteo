@@ -453,13 +453,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1234672520}
+    - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: pufEffect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4768234489609840961, guid: 09d6ef15e67dcca40b50a2fa1c2c1d49, type: 3}
     - target: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: collectEffect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4634932193134347542, guid: 68457b48171807a48b7216d205971640, type: 3}
     - target: {fileID: 5317479224792978869, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -531,6 +535,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5395842363550359978, guid: 2adfe727e919c404d98943365ef35247, type: 3}
   m_PrefabInstance: {fileID: 466042225}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &466042227 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4117806637302923196, guid: 2adfe727e919c404d98943365ef35247, type: 3}
+  m_PrefabInstance: {fileID: 466042225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025d0a830e0bb094d8e2bd050c931784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &481847172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916372586721362263, guid: 06442f56378d86541968bdd0e40cba81, type: 3}
@@ -1619,6 +1634,42 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 466042227}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JumpButtonDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Controllers.PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 466042227}
+    - target: {fileID: 6587108914559924104, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExcavableObjectController
+      objectReference: {fileID: 0}
     - target: {fileID: 6587108914675663057, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_Name
       value: GameCanvas
@@ -1707,6 +1758,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 466042227}
+    - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BarkObjectController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
 --- !u!1 &1234672518 stripped
@@ -1719,6 +1778,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6587108914320686923, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
   m_PrefabInstance: {fileID: 1234672517}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1234672520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 920507818680176529, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+  m_PrefabInstance: {fileID: 1234672517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240198899
 GameObject:
   m_ObjectHideFlags: 0
