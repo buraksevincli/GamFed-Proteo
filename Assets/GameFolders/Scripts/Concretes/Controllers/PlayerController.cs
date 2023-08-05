@@ -93,11 +93,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 _barkObject.Add(col.gameObject);
             }
-
-            if (col.TryGetComponent(out InteractAndCollectObject interactObject))
-            {
-                interactObject.SetThis();
-            }
         }
 
         private void OnTriggerExit2D(Collider2D other)

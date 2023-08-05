@@ -9,7 +9,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
     {
         [SerializeField] private float minSpawnTime;
         [SerializeField] private float maxSpawnTime;
-        [SerializeField] private int direction;
+        [SerializeField] private float direction;
+        [SerializeField] private float angle;
         
         private float _maxSpawnTime;
         private float _currentSpawnTime = 0f;
@@ -34,6 +35,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             InteractAndCollectObject interactObject = SpawnerManager.Instance.GetPool();
 
             interactObject.direction = direction;
+            interactObject.angle = angle;
             interactObject.transform.parent = this.transform;
             interactObject.transform.position = this.transform.position;
             interactObject.gameObject.SetActive(true);

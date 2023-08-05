@@ -1,3 +1,4 @@
+using System;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 
@@ -5,7 +6,8 @@ namespace GameFolders.Scripts.Concretes.Interactives
 {
     public class InteractAndCollectObject : MonoBehaviour
     {
-        public int direction;
+        public float direction;
+        public float angle;
         
         private float _currentLifeTime = 0;
         private Rigidbody2D _rigidbody2D;
@@ -18,6 +20,15 @@ namespace GameFolders.Scripts.Concretes.Interactives
         private void OnEnable()
         {
             ThrowObject();
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.gameObject.CompareTag("Player"))
+            {
+                ScoreCounter.Instance.SetSocialScore();
+                SetThis();
+            }
         }
 
         private void Update()
@@ -34,14 +45,14 @@ namespace GameFolders.Scripts.Concretes.Interactives
         private void ThrowObject()
         {
             Vector2 force = new Vector2(
-                Mathf.Cos(DataManager.Instance.GameData.Angle * Mathf.Deg2Rad), 
-                Mathf.Sin(DataManager.Instance.GameData.Angle * Mathf.Deg2Rad)) * 
+                Mathf.Cos(angle * Mathf.Deg2Rad), 
+                Mathf.Sin(angle * Mathf.Deg2Rad)) * 
                             DataManager.Instance.GameData.Magnitude;
             
             _rigidbody2D.AddForce(force * direction);
         }
 
-        public void SetThis()
+        private void SetThis()
         {
             SpawnerManager.Instance.SetPool(this);
             _currentLifeTime = 0;
