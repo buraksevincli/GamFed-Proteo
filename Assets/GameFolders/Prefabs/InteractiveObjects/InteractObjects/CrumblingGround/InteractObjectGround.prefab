@@ -11,9 +11,17 @@ PrefabInstance:
       propertyPath: interactObject
       value: 
       objectReference: {fileID: 3397170565431431602}
+    - target: {fileID: 2717303978151377452, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4012638513612185606, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Name
       value: CrumblingGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012638513612185606, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4292733646107175461, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Sprite
@@ -38,6 +46,10 @@ PrefabInstance:
     - target: {fileID: 8389116133234434222, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_Name
       value: InteractObjectGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389116133234434222, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9026255241643150352, guid: 70140251b964d0a46b8d700f74d9dd53, type: 3}
       propertyPath: m_RootOrder

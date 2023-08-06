@@ -6,22 +6,22 @@ namespace GameFolders.Scripts.Concretes.Managers
 {
     public class GameManager : MonoSingleton<GameManager>
     {
+        private int _activeSceneIndex;
+        
         public void NextScene()
         {
-            int activeSceneindex;
+            _activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-            activeSceneindex = SceneManager.GetActiveScene().buildIndex;
-
-            if (activeSceneindex == SceneManager.sceneCountInBuildSettings - 1)
+            if (_activeSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
             {
-                activeSceneindex = 0;
+                _activeSceneIndex = 0;
             }
             else
             {
-                activeSceneindex += 1;
+                _activeSceneIndex += 1;
             }
 
-            SceneManager.LoadScene(activeSceneindex);
+            SceneManager.LoadScene(_activeSceneIndex);
         }
     }
 }
