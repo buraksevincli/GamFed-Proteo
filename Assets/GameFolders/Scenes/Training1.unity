@@ -432,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4314396536979025293, guid: 85597a959acbaeb46afa41a7b16d4b7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -56.4
+      value: -56.6
       objectReference: {fileID: 0}
     - target: {fileID: 4314396536979025293, guid: 85597a959acbaeb46afa41a7b16d4b7f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -571,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5395842363550359978, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -6.88
       objectReference: {fileID: 0}
     - target: {fileID: 5395842363550359978, guid: 2adfe727e919c404d98943365ef35247, type: 3}
       propertyPath: m_LocalPosition.y
@@ -706,7 +706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495865018}
   m_LocalRotation: {x: -1e-45, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -56.8, z: -10}
+  m_LocalPosition: {x: -6.88, y: -56.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1214,6 +1214,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99e059813626546fcbe234ac073cfaec, type: 3}
+--- !u!114 &768305809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7179143821262517850, guid: 99e059813626546fcbe234ac073cfaec, type: 3}
+  m_PrefabInstance: {fileID: 768305808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75261db9f6925a46864e69e0d3a9dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &801937113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1559,6 +1570,40 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2140222686727602861, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807076045263944611, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: dialogueSentences.Array.data[0]
+      value: Hosgeldin Proteo. Duydum ki arama kurtarma kopegi olmak istiyormussun.
+        Hadi hic vakit kaybetmeden egitim parkuruna baslayalim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 768305809}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadThisScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Managers.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108913196988956, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914320686925, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: dialogueSentences.Array.data[0]
+      value: Tebrikler! Ilk gorevini basari ile tamamladin. Her bir parkurda daha
+        zorlu gorevler seni bekliyor olacak. Bol sans!
+      objectReference: {fileID: 0}
     - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1690,6 +1735,22 @@ PrefabInstance:
     - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BarkObjectController
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 768305809}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Managers.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
@@ -2221,7 +2282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606932688}
   m_LocalRotation: {x: -1e-45, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -56.8, z: -10}
+  m_LocalPosition: {x: -6.88, y: -56.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

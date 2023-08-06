@@ -507,7 +507,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7179143821262517850, guid: 99e059813626546fcbe234ac073cfaec, type: 3}
   m_PrefabInstance: {fileID: 269696949}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 540578973}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b75261db9f6925a46864e69e0d3a9dca, type: 3}
@@ -18612,6 +18612,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &540578973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7179143821262517853, guid: 99e059813626546fcbe234ac073cfaec, type: 3}
+  m_PrefabInstance: {fileID: 269696949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &631334936
 GameObject:
   m_ObjectHideFlags: 0
@@ -19695,6 +19700,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 176964166321275224, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176964166321275224, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176964166321275224, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 540578973}
+    - target: {fileID: 176964166321275224, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 176964166321275224, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 176964166321275224, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 384538033853128675, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

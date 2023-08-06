@@ -2052,6 +2052,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2140222686727602861, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807076045263944611, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: dialogueSentences.Array.data[0]
+      value: Egitim parkurunun ikinci asamasina hosgeldin Proteo. Bu asamada kokular
+        sana dogru yolu gosterecek. Ama dikkatli ol, bazi kokular calilarin arkasina
+        gizlenmis olabilir. Bol sans!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 547182632}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadThisScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Managers.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873180661787434627, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108913196988956, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587108914320686925, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: dialogueSentences.Array.data[0]
+      value: Tebrikler! Anlasilan koku duyun epey iyiymis. Bakalim siradaki asamada
+        seni neler bekliyor!
+      objectReference: {fileID: 0}
     - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -2183,6 +2218,22 @@ PrefabInstance:
     - target: {fileID: 6587108914716231152, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BarkObjectController
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 547182632}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameFolders.Scripts.Concretes.Managers.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805628668557377059, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
@@ -3022,6 +3073,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99e059813626546fcbe234ac073cfaec, type: 3}
+--- !u!114 &547182632 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7179143821262517850, guid: 99e059813626546fcbe234ac073cfaec, type: 3}
+  m_PrefabInstance: {fileID: 547182631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75261db9f6925a46864e69e0d3a9dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &561313267
 GameObject:
   m_ObjectHideFlags: 3

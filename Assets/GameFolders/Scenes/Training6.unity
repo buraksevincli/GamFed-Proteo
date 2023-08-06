@@ -2153,8 +2153,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6587108914320686925, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: dialogueSentences.Array.data[0]
-      value: "Tebrikler evlat. Gercek bir kahraman olma yolunda emin adimlarla ilerliyorsun.
-        Bakalim siradaki maceralar\u0131nda seni neler bekliyor!"
+      value: "Tebrikler evlat. Egitim parkurunu basarili bir sekilde tamamladin ve
+        gercek bir kahraman olma yolunda emin adimlarla ilerliyorsun. Bakalim siradaki
+        maceralar\u0131nda seni neler bekliyor!"
       objectReference: {fileID: 0}
     - target: {fileID: 6587108914335977645, guid: 0d82fca4623e243408e0e9dd20ab171d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
