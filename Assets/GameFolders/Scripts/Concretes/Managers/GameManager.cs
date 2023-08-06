@@ -1,3 +1,4 @@
+using System;
 using GameFolders.Scripts.Abstracts.Utilities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,11 +8,14 @@ namespace GameFolders.Scripts.Concretes.Managers
     public class GameManager : MonoSingleton<GameManager>
     {
         private int _activeSceneIndex;
-        
-        public void NextScene()
+
+        private void Start()
         {
             _activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        }
 
+        public void NextScene()
+        {
             if (_activeSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
             {
                 _activeSceneIndex = 0;
@@ -22,6 +26,16 @@ namespace GameFolders.Scripts.Concretes.Managers
             }
 
             SceneManager.LoadScene(_activeSceneIndex);
+        }
+
+        public void LoadThisScene()
+        {
+            SceneManager.LoadScene(_activeSceneIndex);
+        }
+
+        public void MainMenu()
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }

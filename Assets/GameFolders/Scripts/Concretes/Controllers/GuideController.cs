@@ -11,7 +11,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
-            if (MissionPanel.Instance.MissionComplete)
+            if (MissionPanel.Instance != null && MissionPanel.Instance.MissionComplete)
             {
                 target.gameObject.SetActive(true);
             }
