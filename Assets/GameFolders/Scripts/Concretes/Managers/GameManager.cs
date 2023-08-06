@@ -12,6 +12,7 @@ namespace GameFolders.Scripts.Concretes.Managers
         private void Start()
         {
             _activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            Application.targetFrameRate = 60;
         }
 
         public void NextScene()

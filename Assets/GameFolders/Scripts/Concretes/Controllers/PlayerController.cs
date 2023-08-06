@@ -119,9 +119,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 return;
             }
 
-            _horizontal = Input.GetAxis("Horizontal");
+            //_horizontal = Input.GetAxis("Horizontal");
 
-            //_horizontal = joystick.Horizontal;
+            _horizontal = joystick.Horizontal;
             
             if (_horizontal == 0)
             {
