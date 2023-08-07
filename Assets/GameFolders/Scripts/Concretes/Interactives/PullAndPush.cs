@@ -8,6 +8,7 @@ namespace GameFolders.Scripts.Concretes.Interactives
 {
     public class PullAndPush : MonoSingleton<PullAndPush>
     {
+        [SerializeField] private Joystick joystick;
         [SerializeField] private Transform mouthTransform;
         [SerializeField] private LayerMask targetLayer;
         [SerializeField] private float distance;
@@ -36,7 +37,7 @@ namespace GameFolders.Scripts.Concretes.Interactives
 
         private void Update()
         {
-            float horizontal = Input.GetAxis("Horizontal");
+            float horizontal = joystick.Horizontal;
 
             if (horizontal != 0)
             {
