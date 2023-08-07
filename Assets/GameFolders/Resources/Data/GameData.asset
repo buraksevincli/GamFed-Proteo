@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b2b4f64a7e77042b62eb27db244617, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  highLevel: 0
   moveSpeed: 10
   jumpForce: 400
   maxEnergy: 100
   forcedRestTime: 3
   energyIncreaseCoefficient: 5
-  energyDecreaseCoefficient: 3
+  energyDecreaseCoefficient: 2
   jumpEnergyDecreaseAmount: 0
   energyIncreaseAmount: 15
   excavableCost: 5
   maxCold: 100
-  feelColdCoefficient: 1
-  feelWarmCoefficient: 2
+  feelColdCoefficient: 2
+  feelWarmCoefficient: 3
   slowdownTime: 10
   coldSlowdownSpeedCoefficient: 0.5
   warmUpPercentageAfterFreeze: 15
