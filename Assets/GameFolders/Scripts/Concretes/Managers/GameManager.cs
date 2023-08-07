@@ -6,6 +6,12 @@ namespace GameFolders.Scripts.Concretes.Managers
 {
     public class GameManager : MonoSingleton<GameManager>
     {
+        public int MaxLevel
+        {
+            get;
+            set;
+        }
+        
         private int _activeSceneIndex;
 
         private void Start()
@@ -16,6 +22,11 @@ namespace GameFolders.Scripts.Concretes.Managers
 
         public void NextScene()
         {
+            if (_activeSceneIndex > MaxLevel)
+            {
+                MaxLevel = _activeSceneIndex + 1;
+                PlayerPrefs.SetInt("Level", MaxLevel);
+            }
             if (_activeSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
             {
                 _activeSceneIndex = 0;
