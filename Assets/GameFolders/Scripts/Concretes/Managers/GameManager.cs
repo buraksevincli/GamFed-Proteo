@@ -27,10 +27,9 @@ namespace GameFolders.Scripts.Concretes.Managers
                 _activeSceneIndex += 1;
             }
             
-            if (_activeSceneIndex -1 >= DataManager.Instance.GameData.highLevel)
+            if (_activeSceneIndex -1 >= PlayerPrefs.GetInt("Level"))
             {
-                DataManager.Instance.GameData.highLevel = _activeSceneIndex - 1;
-                PlayerPrefs.SetInt("Level", DataManager.Instance.GameData.highLevel);
+                PlayerPrefs.SetInt("Level", _activeSceneIndex - 1);
             }
 
             SceneManager.LoadScene(_activeSceneIndex);
