@@ -1,7 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Utilities;
+using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 
 public class LevelTargetController : MonoSingleton<LevelTargetController>
@@ -24,5 +22,6 @@ public class LevelTargetController : MonoSingleton<LevelTargetController>
     {
         dialoguePanel.SetActive(true);
         gameCanvas.SetActive(false);
+        GameManager.Instance.levelCompleted = true;
     }
 }

@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace GameFolders.Scripts.Abstracts.Movements
 {
     public interface IAnimator

@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Abstracts.Interacts;
 using UnityEngine;
 

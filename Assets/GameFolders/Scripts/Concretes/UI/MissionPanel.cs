@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Abstracts.Utilities;
 using GameFolders.Scripts.Concretes.Managers;
 using TMPro;

@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Utilities;
+using GameFolders.Scripts.Concretes.Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreCounter : MonoSingleton<ScoreCounter>
 {
@@ -25,6 +23,7 @@ public class ScoreCounter : MonoSingleton<ScoreCounter>
                 {
                     levelEndPanel.SetActive(true);
                     gamePanel.SetActive(false);
+                    GameManager.Instance.levelCompleted = true;
                 }
                 break;
         }

@@ -6,7 +6,6 @@ using GameFolders.Scripts.Concretes.Interactives;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.Movements;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
@@ -77,6 +76,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
                 DataManager.Instance.EventData.OnSpendEnergy?.Invoke(GameData.JumpEnergyDecreaseAmount);
                 _jump.FixedTick(GameData.GetJumpForce());
+                _animator.SetJumpAnimation();
                 
                 _jumpButtonDown = false;
             }
@@ -121,7 +121,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             //_horizontal = Input.GetAxis("Horizontal");
 
-            _horizontal = joystick.Horizontal;
+            if (GameManager.Instance.levelCompleted)
+            {
+                _horizontal = 0;
+            }
+            else
+            {
+                _horizontal = joystick.Horizontal;
+            }
             
             if (_horizontal == 0)
             {
@@ -132,14 +139,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 _animator.SetRunAnimation(_horizontal);
                 _animator.SetJumpAnimationValue(_mover.GetVelocityY());
-            }
-
-            if (energyController.Energy < GameData.JumpEnergyDecreaseAmount) return;
-            
-            if (Input.GetButtonDown("Jump") && _onGround.IsOnGround)
-            {
-                _animator.SetJumpAnimation();
-                _jumpButtonDown = true;
             }
         }
 

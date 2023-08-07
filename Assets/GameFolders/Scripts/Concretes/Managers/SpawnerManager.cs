@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using GameFolders.Scripts.Abstracts.Utilities;
 using GameFolders.Scripts.Concretes.Interactives;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace GameFolders.Scripts.Concretes.Managers
 {

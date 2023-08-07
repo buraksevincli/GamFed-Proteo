@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ namespace GameFolders.Scripts.Concretes.UI
         {
             int currentLevel = PlayerPrefs.GetInt("Level");
 
-            for (int i = 0; i < currentLevel; i++)
+            for (int i = 0; i <= currentLevel; i++)
             {
                 levelButtons[i].interactable = true;
             }

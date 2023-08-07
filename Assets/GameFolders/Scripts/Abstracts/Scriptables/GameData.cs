@@ -1,11 +1,12 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Abstracts.Scriptables
 {
     [CreateAssetMenu(fileName = "GameData",menuName = "Data/Game Data")]
     public class GameData : ScriptableObject
     { 
+        public int highLevel;
+
         private const float FallAnimationTime = 3;
 
         [Header("Player Movement Settings")]
@@ -109,6 +110,6 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
         public void ResetWindSpeed()
         {
             _windSpeedCoefficient = 1f;
-        }
+        } 
     }
 }

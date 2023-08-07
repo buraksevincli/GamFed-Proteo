@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using GameFolders.Scripts.Abstracts.Interacts;
 using GameFolders.Scripts.Concretes.Managers;

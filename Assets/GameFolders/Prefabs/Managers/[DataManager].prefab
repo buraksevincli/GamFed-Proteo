@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c01863f6bdc04d2a90aeb90a4febfa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 0
+  dontDestroyOnLoad: 1
   eventData: {fileID: 11400000, guid: 3f90171934e604a53afb3dca119e2474, type: 2}
   gameData: {fileID: 11400000, guid: 87745c1525633384bbd9f02ee210fca2, type: 2}

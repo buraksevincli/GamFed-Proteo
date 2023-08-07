@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 

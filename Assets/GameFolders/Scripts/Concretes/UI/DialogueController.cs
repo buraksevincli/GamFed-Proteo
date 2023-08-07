@@ -2,7 +2,6 @@ using System.Collections;
 using GameFolders.Scripts.Concretes.Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace GameFolders.Scripts.Concretes.UI
 {
@@ -41,7 +40,6 @@ namespace GameFolders.Scripts.Concretes.UI
 
         public void NextSentences()
         {
-            Debug.Log("bastın");
             if (_story < dialogueSentences.Length -1)
             {
                 _story++;
