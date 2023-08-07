@@ -25,23 +25,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3909907753380800333, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
       propertyPath: m_Size.x
-      value: 2.0036917
+      value: 2.2328138
       objectReference: {fileID: 0}
     - target: {fileID: 3909907753380800333, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
       propertyPath: m_Size.y
-      value: 0.75893617
+      value: 0.83913064
       objectReference: {fileID: 0}
     - target: {fileID: 3909907753380800333, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
       propertyPath: m_Offset.x
-      value: -0.0021899045
+      value: -0.022479475
       objectReference: {fileID: 0}
     - target: {fileID: 3909907753380800333, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
       propertyPath: m_Offset.y
-      value: -0.12053192
+      value: -0.08043468
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577707389488587735, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848766606027560757, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8389116133234434222, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
       propertyPath: m_Name
       value: CollisionGrass1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389116133234434222, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8767987472689801625, guid: 645c0e2d161c70f4c81f4aa58fb3c020, type: 3}
       propertyPath: m_Size.x
