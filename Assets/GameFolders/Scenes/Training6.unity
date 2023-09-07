@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.62562054
+      objectReference: {fileID: 0}
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.792989
+      objectReference: {fileID: 0}
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0066078007
+      objectReference: {fileID: 0}
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5835948
+      objectReference: {fileID: 0}
     - target: {fileID: 1227116788648984645, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
       propertyPath: m_Name
       value: CampFire1
@@ -3837,6 +3853,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.46478438
+      objectReference: {fileID: 0}
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.69644547
+      objectReference: {fileID: 0}
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.019970685
+      objectReference: {fileID: 0}
+    - target: {fileID: 353872088052297928, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5032625
+      objectReference: {fileID: 0}
     - target: {fileID: 1227116788648984645, guid: 274d95d4821bb7c488f2e9da85aee0e5, type: 3}
       propertyPath: m_Name
       value: CampFire1 (1)
