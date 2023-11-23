@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &587105720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1854951621963418437, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+  m_PrefabInstance: {fileID: 5760363629428620003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1174094499
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +433,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 732578703734365773, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 587105720}
+    - target: {fileID: 732578703734365773, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 1314094640260533514, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -441,6 +454,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1314094640260533514, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854951621963418437, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901499617241859881, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901499617241859881, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901499617241859881, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901499617241859881, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -544,6 +577,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3371789588182224251, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e31027343d354e4dad4d5db64525120, type: 3}
     - target: {fileID: 3530412819219171991, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
