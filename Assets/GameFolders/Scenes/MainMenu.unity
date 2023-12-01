@@ -443,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149926469566226932, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1314094640260533514, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -461,6 +461,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1769667250398886766, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_Text
+      value: "<color=#040400>Game Developer:</color>  \n\tBurak SEV\u0130N\xC7L\u0130
+        \n\t\u0130smail Hakk\u0131 KARA\n\tAlihan AZGUR\n\n<color=#040400>Level Designer:</color>
+        \n\tAy\u015Fenur TURAN\n\tMerve ARSLAN\n\n<color=#040400>2D Game Artist:</color>
+        \n\tU\u011Fur UZASLAN\n\n<color=#040400>Game Designer:</color>  \n\tKevser
+        B\u0130LG\u0130\xC7\n\tMert PINAR\n\tAbdullah UZEL\n\tTamer MOLLA "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769667250398886766, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ee6b7da12f6ab6544a649ac978eabb4b, type: 3}
     - target: {fileID: 1854951621963418437, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -575,11 +587,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2045311048255802385, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2067476742584143617, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2254898812385399303, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_IsActive
@@ -623,7 +635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167345090186861640, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3237527993847543840, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -672,6 +684,14 @@ PrefabInstance:
     - target: {fileID: 4315964382098298324, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897817168582172078, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -80.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897817168582172078, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 5236343770552810171, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -759,16 +779,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7176644576560581638, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7613352647232919646, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7784220654705136921, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7797813956047464532, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_Text
+      value: "<color=#040400>Supporters:</color> \n\tR.Berk KARATA\u015E\n\tH\xFCseyin
+        BAYER\n\tYusuf \xD6ZI\u015EIK\n\tEfe BAYRAKTARO\u011ELU\n\tSelame HOPURCUO\u011ELU\n\tG\xFClp\u0131nar
+        UYAR\n\tKarya KORTEL\n\tYi\u011Fit Alp ASLAN"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7797813956047464532, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ee6b7da12f6ab6544a649ac978eabb4b, type: 3}
     - target: {fileID: 8001730579854105993, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -797,9 +827,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8728088237691552960, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65
+      objectReference: {fileID: 0}
     - target: {fileID: 8835669069065598995, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.0005051048
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061424365717776576, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061424365717776576, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0762593e57b5c496c97e968d880c3ee8, type: 3}
