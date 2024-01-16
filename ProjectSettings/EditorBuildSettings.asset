@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameFolders/Scenes/JungleLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/GameFolders/Scenes/SnowSlideLeve.unity
+    guid: e62ddf47e0b872640aa901fae171049d
   m_configObjects: {}
